@@ -1,0 +1,276 @@
+- name: 'Электроника'
+  subcategories:
+    - name: 'Смартфоны и умные часы'
+      subcategories:
+        - name: 'Мобильные телефоны'
+          products:
+            - name: 'Apple iPhone'
+            - name: 'Samsung Galaxy'
+            - name: 'Xiaomi Redmi'
+        - name: 'Смартфоны'
+          products:
+            - name: 'OPPO'
+            - name: 'OnePlus'
+            - name: 'Nokia'
+        - name: 'Кнопочные мобильные телефоны'
+          porducts:
+            - name: 'Кнопочные мобильные телефон Panasonic'
+            - name: 'Кнопочные мобильные телефон Philips'
+            - name: 'Кнопочные мобильные телефоны Nokia'
+        - name: 'Умные часы и браслеты'
+          product:
+            - name: 'Умные часы Xiaomi'
+            - name: 'Умные часы Amazfit'
+            - name: 'Умные часы HUAWEI'
+        - name: 'Аксессуары для телефонов'
+          products:
+            - name: 'Переходник Apple Lightning'
+            - name: 'Сетевая зарядка Apple'
+            - name: 'Беспроводная зарядная станция Xiaomi Mi'
+
+    - name: 'Портативная техника'
+      subcategories:
+        - name: 'Наушники и Bluetooth гарнитуры'
+          products:
+            - name: 'Беспроводные наушник iDragon'
+            - name: 'Беспроводные наушник Xiaomi Redmi Airdots'
+            - name: 'Беспроводные наушник Bixton AirOns'
+        - name: 'Портативная акустика'
+          products:
+            - name: 'Портативная акустика JBL'
+            - name: 'Портативная акустика LG'
+            - name: 'Портативная акустика SVEN'
+        - name: 'Очки виртуальной реальности'
+          products:
+            - name: 'Очки виртуальной реальности Sony'
+            - name: 'Очки виртуальной реальности Oculus'
+            - name: 'Очки виртуальной реальности Valve'
+        - name: 'Планшеты'
+          product:
+            - name: 'Планшеты Apple iPad'
+            - name: 'Планшеты Samsung Galaxy Tab'
+            - name: 'Планшеты HUAWEI MediaPad'
+        - name: 'Умные колонки'
+          products:
+            - name: 'Умные колонки Яндекс.Станция'
+            - name: 'Умные колонки JBL'
+            - name: 'Умные колонки Harman/Kardon'
+
+    - name: 'Аудио и видео техника'
+      subcategories:
+        - name: 'Телевизоры'
+          products:
+            - name: 'Телевизор LG'
+            - name: 'Телевизор Xiaomi'
+            - name: 'Телевизоры Samsung'
+        - name: 'Онлайн подписки и карты оплаты'
+          products:
+            - name: 'Онлайн-кинотеатр MEGOGO'
+            - name: 'Подписка онлайн-кинотеатра IVI'
+            - name: 'Оплата подписки Единый Мульти'
+        - name: 'Аудиотехника'
+          products:
+            - name: 'Аудиотехника JBL'
+            - name: 'Аудиотехника Xiaomi'
+            - name: 'Аудиотехника DIGMA'
+        - name: 'TV-тюнеры'
+          products:
+            - name: 'TV-тюнеры World Vision'
+            - name: 'TV-тюнеры Selenga '
+            - name: 'TV-тюнеры LUMAX'
+        - name: 'ТВ-приставки и медиаплееры'
+          products:
+            - name: 'ТВ-приставка Xiaomi Mi'
+            - name: 'Полуботинки El Tempo'
+
+        - name: 'Всё для геймеров'
+          subcategories:
+            - name: 'Игровые приставки'
+              products:
+                - name: 'Игровые приставки Sony PlayStation'
+                - name: 'Игровые приставки Nintendo'
+                - name: 'Игровые приставки Microsoft Xbox Series X'
+            - name: 'Игровые ноутбуки'
+              products:
+                - name: 'Игровые ноутбуки ASUS'
+                - name: 'Игровые ноутбуки Xiaomi Mi'
+                - name: 'Игровые ноутбуки MSI'
+            - name: 'Игровые компьютеры'
+              products:
+                - name: 'Игровые компьютеры ASUS '
+                - name: 'Игровые компьютеры HP'
+                - name: 'Игровые компьютеры MSI'
+            - name: 'Игры для приставок и ПК'
+              products:
+                - name: 'Mafia: Definitive Edition'
+                - name: 'Cyberpunk 2077'
+                - name: 'God of War'
+            - name: '4K-гейминг'
+              products:
+                - name: 'Монитор ASUS'
+                - name: 'Монитор HP'
+                - name: 'Монитор MSI'
+        - name: 'Фото- и видеокамеры'
+          subcategories:
+            - name: 'Фотоаппараты'
+              products:
+                - name: 'Фотоаппарат Nikon'
+                - name: 'Фотоаппарат Fujifilm'
+                - name: 'Фотоаппарат Canon'
+            - name: 'Объективы'
+              products:
+                - name: 'Объектив Canon'
+                - name: 'Объектив Fujifilm'
+                - name: 'Объектив Nikon'
+            - name: 'Экшн-камеры'
+              products:
+                - name: 'Экшн-камера GoPro'
+                - name: 'Экшн-камера DJI'
+                - name: 'Экшн-камера Xiaomi'
+            - name: 'Видеокамеры'
+              products:
+                - name: 'Видеокамера Panasonic'
+                - name: 'Видеокамера Sony'
+                - name: 'Видеокамера Canon'
+            - name: 'Квадрокоптеры с камерой'
+              products:
+                - name: 'Квадрокоптер Eachine'
+                - name: 'Квадрокоптер DJI'
+                - name: 'Квадрокоптер Xiaomi'
+
+        - name: 'Умный дом'
+          subcategories:
+            - name: 'Бытовая техника'
+              products:
+                - name: 'Чайник REDMOND '
+                - name: 'Робот-пылесос Xiaomi'
+                - name: 'Телевизор Samsung'
+            - name: 'Освещение и электрика'
+              products:
+                - name: 'Лампа светодиодная Xiaomi Mi LED'
+                - name: 'Выключатель 2х1-полюсный Aqara'
+                - name: 'Розетка Xiaomi Mi'
+            - name: 'Безопасность'
+              products:
+                - name: 'Датчик качества воздуха'
+                - name: 'Датчик утечки газа Xiaomi Mijia'
+                - name: 'Видеорегистратор Hikvision'
+            - name: 'Климат'
+              products:
+                - name: 'Увлажнитель воздуха Xiaomi'
+                - name: 'Настенная сплит-система LG'
+                - name: 'Очиститель воздуха Xiaomi Mi'
+- name: 'Бытовая техника'
+  subcategories:
+    - name: 'Крупная техника для кухни'
+      subcategories:
+        - name: 'Холодильники'
+          products:
+            - name: 'Холодильники Weissgauff'
+            - name: 'Холодильники LG'
+            - name: 'Холодильники ATLANT'
+        - name: 'Посудомоечные машины'
+          products:
+            - name: 'Посудомоечные машины Weissgauff'
+            - name: 'Посудомоечные машины Electrolux'
+            - name: 'Посудомоечные машины Electrolux'
+        - name: 'Кулеры для воды и питьевые фонтанчики'
+          products:
+            - name: 'Напольный кулер'
+            - name: 'Настольный кулер'
+            - name: 'Напольный кулер'
+        - name: 'Аксессуары'
+          products:
+            - name: 'Панель ATLANT'
+            - name: 'Противень'
+            - name: 'Ящик ATLANT'
+
+    - name: 'Техника для дома'
+      subcategories:
+        - name: 'Пылесосы и аксессуары'
+          products:
+            - name: 'Робот-пылесос Xiaomi Mijia'
+            - name: 'Пылесос Xiaomi Dreame'
+            - name: 'Пылесос Wollmer'
+        - name: 'Уход за одеждой'
+          products:
+            - name: 'Отпариватель RUNZEL'
+            - name: 'Парогенератор Tefal'
+            - name: 'Отпариватель Zimber'
+        - name: 'Уборка в доме'
+        - name: 'Швейное оборудование'
+
+    - name: 'Климатическая техника'
+      subcategories:
+        - name: 'Кондиционеры'
+          producst:
+            - name: 'Настенная сплит-система Mitsubishi'
+            - name: 'Настенная сплит-система Samsung'
+            - name: 'Настенная сплит-система Electrolux'
+        - name: 'Водонагреватели'
+          products:
+            - name: 'Проточный электрический водонагреватель Thermex'
+            - name: 'Накопительный электрический водонагреватель Electrolux'
+            - name: 'Проточный газовый водонагреватель Bosch'
+        - name: 'Вентиляторы'
+          products:
+            - name: 'Напольный вентилятор Xiaomi Lexiu'
+            - name: 'Напольный вентилятор Xiaomi Smartmi'
+            - name: 'Напольный вентилятор Xiaomi Mijia'
+        - name: 'Климатизаторы'
+          products:
+            - name: 'Климатизатор ZENET'
+            - name: 'Климатизатор Vitesse'
+            - name: 'Климатизатор Honeywell'
+        - name: 'Очистители и увлажнители'
+          products:
+            - name: 'Мойка воздуха Cuchen'
+            - name: 'Очиститель/увлажнитель воздуха AIC'
+            - name: 'Увлажнитель воздуха Xiaomi'
+
+    - name: 'Встраиваемая техника'
+      subcategories:
+        - name: 'Духовые шкафы'
+          products:
+            - name: 'Электрический духовой шкаф Weissgauff'
+            - name: 'Электрический духовой шкаф Electrolux'
+            - name: 'Электрический духовой шкаф Krona'
+
+        - name: 'Встраиваемые холодильники'
+          products:
+            - name: 'Встраиваемый холодильник Weissgauff'
+            - name: 'Встраиваемый холодильник Electrolux'
+            - name: 'Встраиваемый холодильник Samsung'
+
+        - name: 'Встраиваемые стиральные машины'
+          porducts:
+            - name: 'Стиральная машина Weissgauff'
+            - name: 'Стиральная машина Hotpoint-Ariston'
+            - name: 'Стиральная машина Midea'
+
+        - name: 'Встраиваемые посудомоечные машины'
+          products:
+            - name: 'Посудомоечная машина Weissgauff'
+            - name: 'Посудомоечная машина Bosch'
+            - name: 'Посудомоечная машина Electrolux'
+
+
+    - name: 'Мелкая техника для кухни'
+      subcategories:
+        - name: 'Кофеварки и кофемашины'
+          products:
+            - name: 'Кофеварка рожковая Garlyn'
+            - name: 'Кофемашина Nespresso'
+            - name: 'Кофемашина Philips'
+        - name: 'Микроволновые печи'
+        - name: 'Электрочайники и термопоты'
+        - name: 'Блендеры'
+        - name: 'Мультиварки'
+
+        - name: 'Техника для красоты'
+          subcategories:
+        - name: 'Фены и фен-щётки'
+        - name: 'Щипцы, плойки и выпрямители'
+        - name: 'Машинки для стрижки и триммеры'
+        - name: 'Электробритвы мужские'
+        - name: 'Эпиляторы и женские электробритвы'

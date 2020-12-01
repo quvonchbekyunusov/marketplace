@@ -1,0 +1,13 @@
+currency:
+  style: 'currency'
+  currency: 'UZS'
+  minimumFractionDigits: 0
+humanize:
+  style: 'decimal'
+  notation: 'compact'
+  compactDisplay: 'short'
+decimal:
+  style: 'decimal'
+  maximumSignificantDigits: 2
+percentage:
+  style: 'percent'

@@ -1,0 +1,47 @@
+- name: 'Тип экрана'
+  options:
+    - name: 'цветной TFT, 16.78 млн цветов, сенсорный'
+    - name: 'цветной IPS, сенсорный'
+    - name: 'цветной, сенсорный'
+
+- name: 'Диагональ'
+  options:
+    - name: '5.45 дюйм'
+    - name: '6.2 дюйм'
+    - name: '4.1 дюйм'
+
+- name: 'Размер изображения'
+  options:
+    - name: '1520x720'
+    - name: '1440x720'
+    - name: '1792x828'
+
+- name: 'Количество ядер процессора'
+  options:
+    - name: '8'
+    - name: '4'
+
+- name: 'Объем встроенной памяти'
+  options:
+    - name: '32 ГБ'
+    - name: '64 ГБ'
+    - name: '128 ГБ'
+
+- name: 'Объем оперативной памяти'
+  options:
+    - name: '8 ГБ'
+    - name: '16 ГБ'
+    - name: '32 ГБ'
+
+- name: 'Емкость аккумулятора'
+  options:
+    - name: '3110 мА⋅ч'
+    - name: '3400 мА⋅ч'
+    - name: '4000 мА⋅ч'
+
+- name: 'Тип разъема для зарядки'
+  options:
+    - name: 'micro-USB'
+    - name: 'Lightning'
+    - name: 'USB Type-C'
+

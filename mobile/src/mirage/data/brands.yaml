@@ -1,0 +1,245 @@
+- name: "Samsung"
+  logo: "https://avatars.mds.yandex.net/get-marketcms/1779479/img-63a82e13-1021-42e6-a747-2e13fc7642ae.png/optimize"
+
+- name: "Apple"
+  logo: "https://avatars.mds.yandex.net/get-marketcms/1668019/img-c3d9bc2c-2e25-4db2-b796-094dbde48907.png/optimize"
+
+- name: "Xiaomi"
+  logo: "https://avatars.mds.yandex.net/get-marketcms/1534436/img-f1d5ce6a-e4ae-487d-8cd7-e7c4843fe103.png/optimize"
+
+- name: "Sony"
+  logo: "https://avatars.mds.yandex.net/get-marketcms/475644/img-5bfb9003-4952-4983-a7dd-290039465ab7.png/optimize"
+
+- name: "Philips"
+  logo: "https://avatars.mds.yandex.net/get-marketcms/879900/img-5d4bc361-e02c-4ed0-803e-9e811c5277ca.png/optimize"
+
+- name: "Bosch"
+  logo: "https://avatars.mds.yandex.net/get-marketcms/1534436/img-e4295c7e-8909-4a09-a1b8-1fd56d99db71.png/optimize"
+
+- name: "Acer"
+  logo: "https://avatars.mds.yandex.net/get-marketcms/1668019/img-72d15cc1-e53d-451a-9909-000265c97724.png/optimize"
+
+- name: "Lenovo"
+  logo: "https://avatars.mds.yandex.net/get-marketcms/475644/img-29cdd899-410d-4329-99c2-9f0d08cdbb02.png/optimize"
+
+- name: "Asus"
+  logo: "https://avatars.mds.yandex.net/get-marketcms/1534436/img-91faf49b-80de-4392-baeb-5c88b7eea3f5.png/optimize"
+
+- name: "Corsair"
+  logo: "https://avatars.mds.yandex.net/get-marketcms/1776516/img-067d90cf-31bd-4d5e-8e59-b60675948571.png/optimize"
+
+- name: "Makita"
+  logo: "https://avatars.mds.yandex.net/get-marketcms/879900/img-e3b417ea-99bc-4697-804d-02c63312d619.png/optimize"
+
+- name: "Alpen Gold"
+  logo: "https://avatars.mds.yandex.net/get-marketcms/1490511/img-d05a1428-9057-49a5-99ce-24a2f7b1468a.jpeg/optimize"
+
+- name: "Nescafe"
+  logo: "https://avatars.mds.yandex.net/get-marketcms/879900/img-cb70f867-5161-4de5-882e-a468dd2c0466.jpeg/optimize"
+
+- name: "Raffaello"
+  logo: "https://avatars.mds.yandex.net/get-marketcms/475644/img-e40653eb-dddc-402b-a413-1766b7f97170.svg/svg"
+
+- name: "Michelin"
+  logo: "https://avatars.mds.yandex.net/get-marketcms/1668019/img-ce5f34ee-efff-4659-b3dc-16c31fa0f686.png/optimize"
+
+- name: "Adidas"
+  logo: "https://avatars.mds.yandex.net/get-marketcms/1523779/img-7b23d706-8eb5-4ab0-9b12-159e3f7f1c7b.png/optimize"
+
+- name: "Reebok"
+  logo: "https://avatars.mds.yandex.net/get-marketcms/1668019/img-4483aaf4-a107-418d-acc1-e8607e27c201.png/optimize"
+
+- name: "HP"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id8927991254355705077/orig"
+
+- name: "Canon"
+  logo: "https://avatars.mds.yandex.net/get-mpic/199079/img_id4926482755882222053/orig"
+
+- name: "Casio"
+  logo: "https://avatars.mds.yandex.net/get-mpic/175985/img_id4435786566430516341/orig"
+
+- name: "Dell"
+  logo: "https://avatars.mds.yandex.net/get-mpic/175985/img_id6378957929771018097/orig"
+
+- name: "Deli"
+  logo: "https://avatars.mds.yandex.net/get-mpic/1644362/img_id4198539284130410034.png/orig"
+
+- name: "Epson"
+  logo: "https://avatars.mds.yandex.net/get-mpic/195452/img_id7344077199611815371/orig"
+
+- name: "Electrolux"
+  logo: "https://avatars.mds.yandex.net/get-mpic/1937077/img_id2009025817717669083.png/orig"
+
+- name: "Gigabyte"
+  logo: "https://avatars.mds.yandex.net/get-mpic/175985/img_id7950087600024184632/orig"
+
+- name: "Huawei"
+  logo: "https://avatars.mds.yandex.net/get-mpic/1521939/img_id5633223812447011726.png/orig"
+
+- name: "Hikvision"
+  logo: "https://avatars.mds.yandex.net/get-mpic/199079/img_id3085118485853942501/orig"
+
+- name: "Haier"
+  logo: "https://avatars.mds.yandex.net/get-mpic/1600461/img_id7234172528066309035.png/orig"
+
+- name: "HyperX"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id7449895604053458247.png/orig"
+
+- name: "Intel"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id5461561547207773663/orig"
+
+- name: "Ikea"
+  logo: "https://avatars.mds.yandex.net/get-mpic/1681399/img_id614470985567851411.png/orig"
+
+- name: "JBL"
+  logo: "https://avatars.mds.yandex.net/get-mpic/195452/img_id9054152497383401465/orig"
+
+- name: "Kingston"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id3642468803759278084/orig"
+
+- name: "Karcher"
+  logo: "https://avatars.mds.yandex.net/get-mpic/1673800/img_id7324618643140121224.png/orig"
+
+- name: "LiquiMoly"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id7405869419080235431/orig"
+
+- name: "Midea"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id489400025007500440/orig"
+
+- name: "MSi"
+  logo: "https://avatars.mds.yandex.net/get-mpic/175985/img_id414530403074067890/orig"
+
+- name: "Microsoft"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id5546459970372306593/orig"
+
+- name: "Nike"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id4062699593316552530/orig"
+
+- name: "Nokia"
+  logo: "https://avatars.mds.yandex.net/get-mpic/195452/img_id5891801964988151401/orig"
+
+- name: "Orient"
+  logo: "https://avatars.mds.yandex.net/get-mpic/195452/img_id5923222794091908528/orig"
+
+- name: "Oral-B"
+  logo: "https://avatars.mds.yandex.net/get-mpic/1602935/img_id4293162598060923909.png/orig"
+
+- name: "Pirelli"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id4661045773999519374/orig"
+
+- name: "Panasonic"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id5365692426735929740/orig"
+
+- name: "Pioneer"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id2708313705103006279/orig"
+
+- name: "Patriot"
+  logo: "https://avatars.mds.yandex.net/get-mpic/195452/img_id1254585972016448305/orig"
+
+- name: "Polar"
+  logo: "https://avatars.mds.yandex.net/get-mpic/2008488/img_id8803440274203495868.png/orig"
+
+- name: "Seagate"
+  logo: "https://avatars.mds.yandex.net/get-mpic/1705137/img_id474286622556761381.png/orig"
+
+- name: "Stayer"
+  logo: "https://avatars.mds.yandex.net/get-mpic/1884605/img_id9104072067764078649.gif/orig"
+
+- name: "Tefal"
+  logo: "https://avatars.mds.yandex.net/get-mpic/175985/img_id6507527861452833978/orig"
+
+- name: "Tp-link"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id9092407107903989730/orig"
+
+- name: "Toshiba"
+  logo: "https://avatars.mds.yandex.net/get-mpic/175985/img_id8062604474619834730/orig"
+
+- name: "Toyota"
+  logo: "https://avatars.mds.yandex.net/get-mpic/195452/img_id8187978357740786018/orig"
+
+- name: "Vsemaykiru"
+  logo: "https://avatars.mds.yandex.net/get-mpic/195452/img_id2402258792661733584/orig"
+
+- name: "Volkswagen"
+  logo: "https://avatars.mds.yandex.net/get-mpic/1544149/img_id7873538080757059284.png/orig"
+
+- name: "Western Digital"
+  logo: "https://avatars.mds.yandex.net/get-mpic/1565610/img_id6909319395066389618.png/orig"
+
+- name: "Wella"
+  logo: "https://avatars.mds.yandex.net/get-mpic/175985/img_id5467988444348562687/orig"
+
+- name: "Zalman"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id4901418793059890922/orig"
+
+- name: "ZTE"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id7644246724230050405/orig"
+
+- name: "Puma"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id5437871878677824401/orig"
+
+- name: "Fila"
+  logo: "https://avatars.mds.yandex.net/get-mpic/1382936/img_id7408336419921655910.png/orig"
+
+- name: "Demix"
+  logo: "https://avatars.mds.yandex.net/get-mpic/1244413/img_id7987837256060329021.png/orig"
+
+- name: "Meizu"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id4945079152154333356/orig"
+
+- name: "htc"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id8485223750934125074/orig"
+
+- name: "Alcatel"
+  logo: "https://avatars.mds.yandex.net/get-mpic/1567763/img_id7127308684561567698.png/orig"
+
+- name: "LG"
+  logo: "https://avatars.mds.yandex.net/get-mpic/195452/img_id6223166511496346071/orig"
+
+- name: "Polaris"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id7396059281388418743/orig"
+
+- name: "A4tech"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id6228331848209689123/orig"
+
+- name: "AMD"
+  logo: "https://avatars.mds.yandex.net/get-mpic/195452/img_id2897871626874236470/orig"
+
+- name: "Logitech"
+  logo: "https://avatars.mds.yandex.net/get-mpic/199079/img_id4360348654045836277/orig"
+
+- name: "Hitachi"
+  logo: "https://avatars.mds.yandex.net/get-mpic/199079/img_id3029138453450781665/orig"
+
+- name: "DeWalt"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id2900144779436079425/orig"
+
+- name: "TAC"
+  logo: "https://avatars.mds.yandex.net/get-mpic/96484/img_id4104042566977340410/orig"
+
+- name: "Intex"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id1724607688356561556/orig"
+
+- name: "Hyundai"
+  logo: "https://avatars.mds.yandex.net/get-mpic/1215212/img_id4133105228288277199.png/orig"
+
+- name: "Nivea"
+  logo: "https://avatars.mds.yandex.net/get-mpic/1453843/img_id352983751775731120.png/orig"
+
+- name: "Garnier"
+  logo: "https://avatars.mds.yandex.net/get-mpic/1522540/img_id3171405111702020234.png/orig"
+
+- name: "Gillette"
+  logo: "https://avatars.mds.yandex.net/get-mpic/1614201/img_id273585649196319324.png/orig"
+
+- name: "Dreamline"
+  logo: "https://avatars.mds.yandex.net/get-mpic/1597983/img_id8164723619941221945.png/orig"
+
+- name: "Defender"
+  logo: "https://avatars.mds.yandex.net/get-mpic/199079/img_id9066622635292720392/orig"
+
+- name: "Digma"
+  logo: "https://avatars.mds.yandex.net/get-mpic/200316/img_id9097801026467683398/orig"
+
+- name: "Lego"
+  logo: "https://avatars.mds.yandex.net/get-mpic/195452/img_id696209164757851690/orig"

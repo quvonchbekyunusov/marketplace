@@ -1,0 +1,409 @@
+- name: 'Электроника'
+  subcategories:
+    - name: 'Смартфоны и умные часы'
+      subcategories:
+        - name: 'Мобильные телефоны'
+          products:
+            - name: 'Apple iPhone'
+            - name: 'Samsung Galaxy'
+            - name: 'Xiaomi Redmi'
+        - name: 'Смартфоны'
+          products:
+            - name: 'OPPO'
+            - name: 'OnePlus'
+            - name: 'Nokia'
+        - name: 'Кнопочные мобильные телефоны'
+          porducts:
+            - name: 'Panasonic KX-TU456RU'
+            - name: 'Philips Xenium E182'
+            - name: 'Nokia 2720 Flip Dual sim'
+        - name: 'Умные часы и браслеты'
+          product:
+            - name: 'Xiaomi Mi Band 5'
+            - name: 'Amazfit GTS'
+            - name: 'HUAWEI Watch Fit'
+        - name: 'Аксессуары для телефонов'
+          products:
+            - name: 'Переходник Apple Lightning - mini jack 3.5 (MMX62ZM/A)'
+            - name: 'Сетевая зарядка Apple MU7V2ZM/A'
+            - name: 'Беспроводная зарядная станция Xiaomi Mi Wireless Charging Pad'
+
+    - name: 'Портативная техника'
+      subcategories:
+        - name: 'Наушники и Bluetooth гарнитуры'
+          products:
+            - name: 'Беспроводные наушники iDragon EP-019 D SW с беспроводным зарядным кейсом'
+            - name: 'Беспроводные наушники Xiaomi Redmi Airdots S'
+            - name: 'Беспроводные наушники Bixton AirOns Pro'
+        - name: 'Портативная акустика'
+          products:
+            - name: 'JBL Charge 4'
+            - name: 'LG XBOOM Go PL5'
+            - name: 'SVEN PS-600'
+        - name: 'Очки виртуальной реальности'
+          products:
+            - name: 'Oculus Rift S'
+            - name: 'Sony PlayStation VR Mega Pack Bundle 2 MK4 (PS719998600)'
+            - name: 'Valve Index VR Kit'
+        - name: 'Планшеты'
+          product:
+            - name: 'Apple iPad (2020) 32Gb Wi-Fi'
+            - name: 'Samsung Galaxy Tab A 10.1 SM-T515 32Gb (2019)'
+            - name: 'Samsung Galaxy Tab S6 Lite 10.4 SM-P615 64Gb LTE (2020)'
+        - name: 'Умные колонки'
+          products:
+            - name: 'Яндекс.Станция Мини'
+            - name: 'JBL Link Portable с Алисой'
+            - name: 'Harman/Kardon Citation One'
+
+    - name: 'Аудио и видео техника'
+      subcategories:
+        - name: 'Телевизоры'
+        - name: 'Онлайн подписки и карты оплаты'
+        - name: 'Аудиотехника'
+        - name: 'TV-тюнеры'
+        - name: 'ТВ-приставки и медиаплееры'
+
+        - name: 'Всё для геймеров'
+          subcategories:
+            - name: 'Игровые приставки'
+            - name: 'Игровые ноутбуки'
+            - name: 'Игровые компьютеры'
+            - name: 'Игры для приставок и ПК'
+            - name: '4K-гейминг'
+
+        - name: 'Фото- и видеокамеры'
+          subcategories:
+            - name: 'Фотоаппараты'
+            - name: 'Объективы'
+            - name: 'Экшн-камеры'
+            - name: 'Видеокамеры'
+            - name: 'Квадрокоптеры с камерой'
+
+        - name: 'Умный дом'
+          subcategories:
+            - name: 'Бытовая техника'
+            - name: 'Освещение и электрика'
+            - name: 'Безопасность'
+            - name: 'Климат'
+
+- name: 'Бытовая техника'
+  subcategories:
+    - name: 'Крупная техника для кухни'
+      subcategories:
+        - name: 'Холодильники'
+        - name: 'Посудомоечные машины'
+        - name: 'Кулеры для воды и питьевые фонтанчики'
+        - name: 'Умные часы и браслеты'
+        - name: 'Аксессуары'
+
+    - name: 'Техника для дома'
+      subcategories:
+        - name: 'Пылесосы и аксессуары'
+        - name: 'Уход за одеждой'
+        - name: 'Уборка в доме'
+        - name: 'Швейное оборудование'
+
+    - name: 'Климатическая техника'
+      subcategories:
+        - name: 'Кондиционеры'
+        - name: 'Водонагреватели'
+        - name: 'Вентиляторы'
+        - name: 'Климатизаторы'
+        - name: 'Очистители и увлажнители'
+
+    - name: 'Встраиваемая техника'
+      subcategories:
+        - name: 'Духовые шкафы'
+        - name: 'Встраиваемые холодильники'
+        - name: 'Встраиваемые стиральные машины'
+        - name: 'Встраиваемые посудомоечные машины'
+
+
+        - name: 'Мелкая техника для кухни'
+          subcategories:
+            - name: 'Кофеварки и кофемашины'
+            - name: 'Микроволновые печи'
+            - name: 'Электрочайники и термопоты'
+            - name: 'Блендеры'
+            - name: 'Мультиварки'
+
+            - name: 'Техника для красоты'
+              subcategories:
+            - name: 'Фены и фен-щётки'
+            - name: 'Щипцы, плойки и выпрямители'
+            - name: 'Машинки для стрижки и триммеры'
+            - name: 'Электробритвы мужские'
+            - name: 'Эпиляторы и женские электробритвы'
+
+- name: 'Компьютерная техника'
+  subcategories:
+    - name: 'Ноутбуки и планшеты'
+      subcategories:
+        - name: 'Ноутбуки'
+        - name: 'Планшеты'
+        - name: 'Графические планшеты'
+        - name: 'Аксессуары для графических планшетов'
+        - name: 'Аксессуары для ноутбуков'
+
+
+    - name: ' Настольные ПК и моноблоки'
+      subcategories:
+        - name: 'Настольные компьютеры'
+        - name: 'Моноблоки'
+
+    - name: 'Комплектующие'
+      subcategories:
+        - name: 'Видеокарты'
+        - name: 'Внутренние жесткие диски'
+        - name: 'Внутренние твердотельные накопители (SSD)'
+        - name: 'Процессоры (CPU)'
+        - name: 'Модули памяти'
+
+    - name: 'Товары для геймеров'
+      subcategories:
+        - name: 'PlayStation'
+        - name: 'Xbox'
+        - name: 'Nintendo'
+        - name: 'Ретроконсоли'
+        - name: 'Игровые ноутбуки'
+
+    - name: 'Периферийные устройства'
+      subcategories:
+        - name: 'Мониторы'
+        - name: 'Графические планшеты'
+        - name: 'Аксессуары для графических планшетов'
+        - name: 'Мыши'
+        - name: 'Клавиатуры'
+
+    - name: 'Оргтехника и расходные материалы'
+      subcategories:
+        - name: 'Ламинаторы, брошюровщики, резаки'
+        - name: 'Уничтожители бумаг (шредеры)'
+        - name: 'Аксессуары, запчасти и комплектующие'
+        - name: 'Оборудование для связи'
+
+- name: 'Детские товары'
+  subcategories:
+    - name: 'Игрушки и игры'
+      subcategories:
+        - name: 'Игрушки и игры'
+        - name: 'Конструкторы'
+        - name: 'Игровые наборы и фигурки'
+        - name: 'Для детей до 3 лет'
+        - name: 'Развивающие и обучающие игрушки'
+
+    - name: 'Коляски и автокресла'
+      subcategories:
+        - name: 'Коляски'
+        - name: 'Автокресла'
+        - name: 'Люльки и переноски'
+        - name: 'Матрасы и наматрасники'
+
+    - name: 'Детский спорт'
+      subcategories:
+        - name: 'Детский транспорт'
+        - name: 'Детская площадка'
+        - name: 'Летний спорт'
+        - name: 'Зимний спорт'
+
+
+    - name: 'Детская комната'
+      subcategories:
+        - name: 'Детская мебель и аксессуары'
+        - name: 'Матрасы и текстиль'
+        - name: 'Защита и безопасность'
+        - name: 'Качели, шезлонги'
+        - name: 'Ходунки, прыгунки'
+
+    - name: 'Развитие и обучение'
+      subcategories:
+        - name: 'Развивающие пособия и материалы'
+        - name: 'Книги для детей'
+        - name: 'Наборы для опытов и исследований'
+        - name: 'Пазлы'
+        - name: 'Головоломки'
+
+- name: 'Одежда и обувь'
+  subcategories:
+    - name: 'Женщинам'
+      subcategories:
+        - name: 'Верхняя одежда'
+            products:
+              - name: 'Пуховик Limar'
+              - name: 'Пуховик MERRELL'
+              - name: 'Пуховик carhartt'
+              - name: 'Пуховик PUMA'
+
+        - name: 'Платья'
+            products:
+              - name: 'Платье CALVIN KLEIN'
+              - name: 'Платье FiNN FLARE'
+              - name: 'Платье BILLABONG'
+              - name: 'Платье Tom Tailor'
+        - name: 'Свитеры и кардиганы'
+            products:
+              - name: 'Кардиган bonprix'
+              - name: 'Кардиган bonprix'
+              - name: 'Кардиган bonprix'
+              - name: 'Кардиган Ивановский Трикотаж'
+        - name: 'Джемперы и водолазки'
+            products:
+              - name: 'Джемпер Zarina'
+              - name: 'Водолазка Opium'
+              - name: 'Джемпер VAY'
+              - name: 'Джемпер FiNN FLARE'
+        - name: 'Домашняя одежда'
+             products:
+              - name: 'Пижама Jadea'
+              - name: 'Пижама Aruelle'
+              - name: 'Халат Текстиль Сити'
+              - name: 'Халат EvaTeks'
+              - name: 'Пижама I love'
+
+    - name: 'Мужчинам'
+      subcategories:
+        - name: 'Верхняя одежда'
+            products:
+              - name: 'Пуховик PUMA'
+              - name: 'Пальто FiNN FLARE'
+              - name: 'Пальто La Redoute'
+              - name: 'Куртка URSUS'
+              - name: 'Пуховик Arctic Explorer'
+        - name: 'Свитеры и кардиганы'
+          products:
+            - name: 'Кардиган Ивановский Трикотаж'
+            - name: 'Кардиган Lady Sharm'
+            - name: 'Джемпер VAY'
+            - name: 'Кардиган bonprix'
+        - name: 'Пуловеры и водолазки'
+          products:
+            - name: 'Пуловер TOMMY HILFIGER'
+            - name: 'Водолазка Intimidea'
+            - name: 'Джемпер Descente'
+            - name: 'Джемпер bonprix'
+            - name: 'Джемпер Roxy'
+        - name: 'Футболки-поло'
+          products:
+            - name: 'Поло HENDERSON'
+            - name: 'U.S. POLO ASSN.'
+            - name: 'Поло Sols'
+            - name: 'Поло U.S. POLO ASSN'
+            - name: 'Поло LACOSTE'
+        - name: 'Лонгсливы'
+          products:
+            - name: 'Лонгслив Springfield'
+            - name: 'Лонгслив HENDERSON'
+            - name: 'Лонгслив The North Face'
+            - name: 'Лонгслив bonprix'
+            - name: 'Лонгслив Good Loot'
+
+
+
+    - name: 'Детям'
+      subcategories:
+        - name: 'Демисезонная одежда и обувь'
+          products:
+            - name: 'Комбинезон Huppa Keira 31920030-833'
+            - name: 'Куртка Reima Janne 531371'
+            - name: 'Полукомбинезон Reima Lammikko 522233'
+            - name: 'Куртка Lassie 721746'
+            - name: 'Комбинезон Lassie Silko'
+            - name: 'Пальто Reima'
+        - name: 'Для девочек'
+          products:
+            - name: 'Пальто KERRY'
+            - name: 'Пальто Huppa'
+            - name: 'Комплект с брюками Lassie Madde 723734-4842/9321'
+            - name: 'Платье Веселый Малыш'
+            - name: 'Сандалии SursilOrtho'
+            - name: 'Полукомбинезон Reima Lammikko 522233'
+        - name: 'Для малышей'
+          products:
+            - name: 'Комбинезон Reima Puhuri 510306'
+            - name: 'Комбинезон-трансформер BOOM! by Orby'
+            - name: 'Полукомбинезон Reima Lammikko 522233'
+            - name: 'Полукомбинезон Reima Reimatec Stockholm 512102'
+            - name: 'Комбинезон Lassie 710743R'
+        - name: 'Обувь'
+          products:
+            - name: 'Ботинки asar'
+            - name: 'Ботинки КОТОФЕЙ'
+            - name: 'Ботинки Reima'
+
+
+    - name: 'Обувь'
+      subcategories:
+        - name: 'Женская'
+          products:
+            - name: 'Кроссовки ecco'
+            - name: 'Кроссовки Rieker'
+            - name: 'Кроссовки New Balance 574 Mid'
+        - name: 'Мужская'
+          products:
+            - name: 'Кроссовки New Balance 754'
+            - name: 'Кроссовки NIKE Air Monarch IV'
+            - name: 'Кроссовки ASICS Jolt 2'
+        - name: 'Для мальчиков'
+          products:
+            - name: 'Дерби Clarks ORIGINALS'
+            - name: 'Дерби Baden'
+            - name: 'Полуботинки El Tempo'
+        - name: 'Для малышей'
+          products:
+            - name: 'Ботинки Reima'
+            - name: 'Ботинки'
+            - name: 'Сноубутсы'
+        - name: 'Для девочек'
+          products:
+            - name: 'Сапоги Kuoma Putkivarsi 1303'
+            - name: 'Ботинки КОТОФЕЙ'
+            - name: 'Ботинки Reima'
+
+    - name: 'Аксессуары'
+      subcategories:
+        - name: 'Часы'
+          products:
+            - name: с подзаводом Jebely KA-083-BK
+            - name: Шкатулка
+            - name: Ремешки и браслеты для часов
+        - name: 'Бижутерия'
+          products:
+            - name: Серьги
+            - name: Колье
+            - name: Комплекты бижутерии
+        - name: 'Зонты'
+          products:
+            - name:  складной с защитой от УФ-лучей Sunbrella, черный
+            - name: наоборот "Элегантная клетка"
+            - name: RoadLike черный,
+        - name: 'Солнцезащитные очки'
+          products:
+            - name: Очки
+            - name: Солнцезащитные очки с поляризацией. Зачем?
+            - name: Солнцезащитные,
+
+        - name: 'Головоломки'
+          products:
+            - name: Step puzzle Танграм (89812)
+            - name: QiYi MoFangGe
+            - name: Delfbrick DLW-39
+        - name: 'Ремни и пояса'
+          products:
+            - name: кожаный Belt 37мм коричневый
+            - name: Ke Tactical брючный из стропы 40 мм олива
+            - name: с металлической пряжкой (Черный)
+        - name: 'Сумки и чемоданы'
+          products:
+            - name:  PacSafe
+            - name: 35 мм, металлическая
+            - name: Портупея женский
+
+
+    - name: 'Сумки и чемоданы'
+      subcategories:
+        - name: 'Чемоданы и дорожные сумки'
+        - name: 'Сумки, портфели'
+        - name: 'Рюкзаки'
+        - name: 'Школьные рюкзаки и сумки'
+        - name: 'Дорожные аксессуары'

@@ -1,0 +1,190 @@
+- name: 'Компьютерная техника'
+  subcategories:
+    - name: 'Ноутбуки и планшеты'
+      subcategories:
+        - name: 'Ноутбуки'
+            - product:
+                - name: 'Ноутбук ASUS TUF Gaming FX505'
+                - name: 'Ноутбук ASUS VivoBook 15 X512'
+                - name: 'Ноутбук ASUS M509'
+                - name: 'Ноутбук Lenovo IdeaPad S145'
+                - name: 'Ноутбук Xiaomi RedmiBook 16" Ryzen Edition'
+                - name: 'Ноутбук ASUS M570'
+                - name: 'Ноутбук ASUS Zenbook 14 UX431'
+        - name: 'Планшеты'
+            - product:
+                - name: 'Планшет Samsung Galaxy Tab A 10.1 SM-T515 32Gb (2019)'
+                - name: 'Планшет Apple iPad (2020) 32Gb Wi-Fi'
+                - name: 'Планшет Apple iPad (2019) 32Gb Wi-Fi'
+                - name: 'Планшет Samsung Galaxy Tab A 8.0 SM-T290 32Gb (2019)'
+        - name: 'Графические планшеты'
+            - product:
+                - name: 'Графический планшет WACOM One Medium (CTL-672)'
+                - name: 'Графический планшет WACOM One Small (CTL-472-N)'
+                - name: 'Графический планшет XP-PEN Deco 01 V2'
+                - name: 'Графический планшет XP-PEN Star G960)'
+        - name: 'Аксессуары для графических планшетов'
+            - product:
+                - name: 'Стилус Pen 2K для WACOM'
+                - name: 'Стилус Grip Pen для WACOM'
+                - name: 'HUION'
+                - name: 'Стилус Pro Pen 2 для WACOM'
+        - name: 'Аксессуары для планшетов'
+            - subcategories:
+                - name: 'Чехлы для планшетов'
+                    - product:
+                        - name: 'Чехол Smart Cover для Apple iPad (2019) 10.2"/iPad Air (2019) 10.5"'
+                        - name: 'Чехол Smart Cover для iPad 9,7 дюйма'
+                        - name: 'Чехол EF-BT580 для Samsung Galaxy Tab A 10.1"'
+                        - name: 'Чехол EF-BT590 для Samsung Galaxy Tab A 10.5"'
+                - name: 'Защитные пленки и стекла для планшетов'
+                    - product:
+                        - name: 'Защитное стекло Red Line Tempered glass для Apple iPad 10.2 (2019)'
+                        - name: 'Защитная пленка LuxCase антибликовая универсальная 14'' (290x210 мм)'
+                        - name: 'Защитное стекло LuxCase для Apple iPad Pro 12.9 2018'
+                        - name: 'Защитная пленка LuxCase для Huawei Mediapad T3 10 / суперпрозрачная'
+                - name: 'Автомобильные держатели для мобильных устройств'
+                    - product:
+                        - name: 'Держатель Ginzzu GH-583'
+                        - name: 'Магнитный держатель Hoco CA45'
+                        - name: 'Держатель Ppyple CD-NT'
+                        - name: 'Держатель Defender Car holder 101+'
+                - name: 'Универсальные внешние аккумуляторы'
+                    - product:
+                        - name: 'Аккумулятор Xiaomi Redmi Power Bank Fast Charge 20000'
+                        - name: 'Аккумулятор Xiaomi Mi Power Bank 3 Pro 20000 (PLM07ZM)'
+                        - name: 'Аккумулятор Xiaomi Mi Power Bank 3 10000 (PLM13ZM)'
+                        - name: 'Аккумулятор Xiaomi Redmi Power Bank 10000'
+    - name: ' Настольные ПК и моноблоки'
+      subcategories:
+        - name: 'Настольные компьютеры'
+            - product:
+                - name: 'Платформа Intel NUC 8 Home (NUC8i3BEH2) Intel Core i3-8109U/Intel Iris Plus Graphics 655/ОС не установлена'
+                - name: 'Платформа Intel NUC Kit (NUC5CPYH) Intel Celeron N3050/ОС не установлена'
+                - name: 'Игровой компьютер Supermicro SuperWorkstation SYS-5038AD-T Midi-Tower/без процессора/без ОЗУ/ОС не установлена'
+                - name: 'Неттоп Lenovo ThinkCentre M73e (10AY0067RU) Slim-Desktop/Intel Core i5-4460T/4 ГБ/8 ГБ SSD+500 ГБ HDD/Intel HD Graphics 4600/DOS'
+        - name: 'Моноблоки'
+            - product:
+                - name: 'Моноблок 23.8" Lenovo AIO V530-24ICB'
+                - name: 'Моноблок 27" DELL OptiPlex 7770'
+                - name: 'Моноблок 27" Apple iMac (Retina 5K, середина 2020 г.)'
+                - name: 'Моноблок 23.8" Acer Aspire C24-963'
+                - name: 'Моноблок 21.5" ASUS A6432UAK'
+    - name: 'Комплектующие'
+      subcategories:
+        - name: 'Видеокарты'
+            - product:
+                - name: 'Видеокарта GIGABYTE GeForce GTX 1660 SUPER 1830MHz PCI-E 3.0 6144MB 14000MHz 192 bit HDMI 3xDisplayPort HDCP OC'
+                - name: 'Видеокарта GIGABYTE GeForce GTX 1660 SUPER 1860MHz PCI-E 3.0 6144MB 14000MHz 192 bit 3xDisplayPort HDMI HDCP GAMING OC'
+                - name: 'Видеокарта MSI GeForce RTX 2060 SUPER 1695MHz PCI-E 3.0 8192MB 14000MHz 256 bit HDMI 3xDisplayPort HDCP GAMING X'
+                - name: 'Видеокарта Palit GeForce GTX 1650 SUPER 1530MHz PCI-E 3.0 4096MB 12000MHz 128 bit DVI HDMI DisplayPort HDCP StormX'
+        - name: 'Внутренние жесткие диски'
+            - product:
+                - name: 'Жесткий диск Western Digital WD10EZEX'
+                - name: 'Жесткий диск Toshiba 1 TB HDWD110UZSVA'
+                - name: 'Жесткий диск Seagate Barracuda 2 TB ST2000DM008'
+                - name: 'Жесткий диск Seagate IronWolf 2 TB ST2000VN004'
+        - name: 'Внутренние твердотельные накопители (SSD)'
+            - product:
+                - name: 'Твердотельный накопитель Samsung 860 EVO 500 GB (MZ-76E500BW)'
+                - name: 'Твердотельный накопитель Samsung 860 EVO 250 GB (MZ-76E250BW)'
+                - name: 'Твердотельный накопитель Kingston 240 GB (SA400S37/240G)'
+                - name: 'Твердотельный накопитель Samsung 970 EVO Plus 500 GB (MZ-V7S500BW)'
+        - name: 'Процессоры (CPU)'
+            - product:
+                - name: 'Процессор AMD Ryzen 5 3600'
+                - name: 'Процессор Intel Core i5-9600KF'
+                - name: 'Процессор AMD Ryzen 5 3500X'
+                - name: 'Процессор AMD Ryzen 5 3600X'
+        - name: 'Модули памяти'
+            - product:
+                - name: 'Оперативная память 8 GB 2 шт. HyperX Fury HX426C16FB3K2/16'
+                - name: 'Оперативная память 8 GB 2 шт. Corsair Vengeance LPX CMK16GX4M2B3200C16'
+                - name: 'Оперативная память 8 GB 2 шт. HyperX Fury HX432C16FB3K2/16'
+                - name: 'Оперативная память 8 GB 1 шт. Samsung M378A1K43CB2-CTD'
+
+    - name: 'Товары для геймеров'
+      subcategories:
+        - name: 'PlayStation'
+            - product:
+                - name: 'Игровая приставка Sony PlayStation 4 Slim 1 ТБ'
+                - name: 'Игровая приставка Sony PlayStation 4 Pro'
+                - name: 'Игровая приставка Sony PlayStation 4 Slim 500 ГБ'
+                - name: 'Игровая приставка Sony PlayStation Portable Slim & Lite (PSP-3000)'
+        - name: 'Xbox'
+            - product:
+                - name: 'Игровая приставка Microsoft Xbox One X'
+                - name: 'Игровая приставка Microsoft Xbox One S 1 ТБ с двумя геймпадами'
+                - name: 'Игровая приставка Microsoft Xbox One X Cyberpunk 2077 Limited Edition'
+                - name: 'Игровая приставка Microsoft Xbox 360 E 500 ГБ'
+        - name: 'Nintendo'
+            - product:
+                - name: 'Игровая приставка Nintendo Switch 32 ГБ'
+                - name: 'Игровая приставка Nintendo Switch Lite'
+                - name: 'Игровая приставка Nintendo Switch Sweet'
+                - name: 'Игровая приставка Nintendo DSi XL'
+        - name: 'Ретроконсоли'
+            - product:
+                - name: 'Игровая приставка Genesis Gopher 2 (500 игр)'
+                - name: 'Игровая приставка SUP Game Box 400 in 1'
+                - name: 'Игровая приставка Modern Wireless'
+                - name: 'Игровая приставка Magistr Titan 3'
+    - name: 'Периферийные устройства'
+      subcategories:
+        - name: 'Мониторы'
+            - product:
+                - name: ''
+                - name: ''
+                - name: ''
+                - name: ''
+        - name: 'Графические планшеты'
+            - product:
+                - name: ''
+                - name: ''
+                - name: ''
+                - name: ''
+        - name: 'Аксессуары для графических планшетов'
+            - product:
+                - name: ''
+                - name: ''
+                - name: ''
+                - name: ''
+        - name: 'Мыши'
+            - product:
+                - name: ''
+                - name: ''
+                - name: ''
+                - name: ''
+        - name: 'Клавиатуры'
+            - product:
+                - name: ''
+                - name: ''
+                - name: ''
+                - name: ''
+
+    - name: 'Оргтехника и расходные материалы'
+      subcategories:
+        - name: 'Ламинаторы, брошюровщики, резаки'
+            - product:
+                - name: ''
+                - name: ''
+                - name: ''
+                - name: ''
+        - name: 'Уничтожители бумаг (шредеры)'
+            - product:
+                - name: ''
+                - name: ''
+                - name: ''
+                - name: ''
+        - name: 'Аксессуары, запчасти и комплектующие'
+            - product:
+                - name: ''
+                - name: ''
+                - name: ''
+                - name: ''
+        - name: 'Оборудование для связи'
+        - product:
+            - name: ''
+            - name: ''
+            - name: ''
+            - name: ''

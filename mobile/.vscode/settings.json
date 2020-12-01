@@ -1,0 +1,14 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "vue"
+  ],
+  "vetur.experimental.templateInterpolationService": false,
+  "i18n-ally.localesPaths": "src/i18n/locales",
+  "files.eol": "\n",
+  "javascript.validate.enable": false,
+  "i18n-ally.sourceLanguage": "ru",
+  "editor.formatOnSave": true
+}

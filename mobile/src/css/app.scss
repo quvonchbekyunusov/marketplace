@@ -1,0 +1,28 @@
+@import "reset";
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-no-decoration {
+  text-decoration: none;
+}
+
+.word-break {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.word-break-hyphens {
+  white-space: normal;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.no-shrink {
+  flex-shrink: 0;
+}
+
+.no-grow {
+  flex-grow: 0;
+}
