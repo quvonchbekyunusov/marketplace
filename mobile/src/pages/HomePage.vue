@@ -47,7 +47,7 @@
         </ul>
       </section>
 
-      <!-- <section v-if="popularCatalogs.length" class="q-pa-md col-grow">
+      <section v-if="popularCatalogs.length" class="q-pa-md col-grow">
         <h4 class="product-group-label q-mb-sm text-weight-bold">
           Хиты продажи
         </h4>
@@ -70,7 +70,7 @@
             />
           </li>
         </ul>
-      </section> -->
+      </section>
 
       <section v-if="popularBrands.length" class="q-pa-md col-grow">
         <h4 class="product-group-label q-mb-sm text-weight-bold">
@@ -138,22 +138,19 @@ export default {
       const { data: catalogs } = await api.all('catalog', {
         filter: { oldPrice: 'ne:null' },
         include: ['element', 'element.product'],
-        // page: {
-        //   size: 10,
-        //   number: 1,
-        // },
       });
 
       return catalogs.filter((catalog) => catalog.element);
     },
 
     async popularCatalogs() {
-      return PopularApi.catalogs({
-        count: 4,
+      const catalogs = await PopularApi.catalogs({
         options: {
           include: ['element', 'element.product'],
         },
       });
+      console.log(catalogs);
+      return catalogs.filter((catalog) => catalog.element);
     },
 
     async popularBrands() {

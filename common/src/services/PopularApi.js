@@ -76,8 +76,12 @@ class PopularApi {
     });
 
     const catalogsSalesCountPairs = zip(catalogs, catalogsSalesCount);
-    const filteredSalesCountPairs = catalogsSalesCountPairs.filter(([, salesCount]) => salesCount > 0);
+    const filteredSalesCountPairs = catalogsSalesCountPairs.filter((sales) => sales.length > 0);
     const orderedSalesCountPairs = orderBy(filteredSalesCountPairs, ['1'], ['desc']);
+
+    if (!count) {
+      return map(orderedSalesCountPairs, '0');
+    }
 
     return map(take(orderedSalesCountPairs, count), '0');
   }
