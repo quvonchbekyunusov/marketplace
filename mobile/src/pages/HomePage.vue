@@ -1,7 +1,6 @@
 <template>
   <q-page class="column">
     <div v-if="isLoading" class="row justify-center q-pa-xl">
-      {{ discountedCatalogs }}
       <q-spinner size="sm" />
     </div>
     <template v-else>
@@ -20,12 +19,12 @@
           </li>
         </ul>
       </section>
-<!--
+
       <section v-if="discountedCatalogs.length" class="q-pa-md col-grow">
         <h4 class="product-group-label q-mb-sm text-weight-bold">
           Скидки
         </h4>
-
+        <!-- <json-printer :value="discountedCatalogs" /> -->
         <ul class="row q-col-gutter-x-sm q-col-gutter-y-lg">
           <li
             v-for="catalog in discountedCatalogs"
@@ -33,6 +32,7 @@
             class="col-6 column"
           >
             <z-catalog-card
+              v-if="catalog.element"
               class="col-grow"
               :catalog="catalog"
               :price="{ value: catalog.price, old: catalog.oldPrice }"
@@ -47,7 +47,7 @@
         </ul>
       </section>
 
-      <section v-if="popularCatalogs.length" class="q-pa-md col-grow">
+      <!-- <section v-if="popularCatalogs.length" class="q-pa-md col-grow">
         <h4 class="product-group-label q-mb-sm text-weight-bold">
           Хиты продажи
         </h4>
@@ -98,7 +98,7 @@ import ZPopularCategoryCard from '@/components/ZPopularCategoryCard';
 import ZBrandCard from '@/components/ZBrandCard';
 import promo1Img from '@/assets/promo-1.png';
 import promo2Img from '@/assets/promo-2.jpg';
-// import ZCatalogCard from '@/components/ZCatalogCard';
+import ZCatalogCard from '@/components/ZCatalogCard';
 
 export default {
   name: 'HomePage',
@@ -106,7 +106,7 @@ export default {
     ZAdCarousel,
     ZPopularCategoryCard,
     ZBrandCard,
-    // ZCatalogCard,
+    ZCatalogCard,
   },
   computed: {
     ...mapGetters({
@@ -138,13 +138,13 @@ export default {
       const { data: catalogs } = await api.all('catalog', {
         filter: { oldPrice: 'ne:null' },
         include: ['element', 'element.product'],
-        page: {
-          size: 4,
-          number: 1,
-        },
+        // page: {
+        //   size: 10,
+        //   number: 1,
+        // },
       });
 
-      return catalogs;
+      return catalogs.filter((catalog) => catalog.element);
     },
 
     async popularCatalogs() {
