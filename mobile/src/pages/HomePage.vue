@@ -1,6 +1,7 @@
 <template>
   <q-page class="column">
     <div v-if="isLoading" class="row justify-center q-pa-xl">
+      {{ discountedCatalogs }}
       <q-spinner size="sm" />
     </div>
     <template v-else>
@@ -19,7 +20,7 @@
           </li>
         </ul>
       </section>
-
+<!--
       <section v-if="discountedCatalogs.length" class="q-pa-md col-grow">
         <h4 class="product-group-label q-mb-sm text-weight-bold">
           Скидки
@@ -69,7 +70,7 @@
             />
           </li>
         </ul>
-      </section>
+      </section> -->
 
       <section v-if="popularBrands.length" class="q-pa-md col-grow">
         <h4 class="product-group-label q-mb-sm text-weight-bold">
@@ -97,7 +98,7 @@ import ZPopularCategoryCard from '@/components/ZPopularCategoryCard';
 import ZBrandCard from '@/components/ZBrandCard';
 import promo1Img from '@/assets/promo-1.png';
 import promo2Img from '@/assets/promo-2.jpg';
-import ZCatalogCard from '@/components/ZCatalogCard';
+// import ZCatalogCard from '@/components/ZCatalogCard';
 
 export default {
   name: 'HomePage',
@@ -105,7 +106,7 @@ export default {
     ZAdCarousel,
     ZPopularCategoryCard,
     ZBrandCard,
-    ZCatalogCard,
+    // ZCatalogCard,
   },
   computed: {
     ...mapGetters({
