@@ -53,9 +53,7 @@ class MPlaceGateway extends AbstractGateway {
 
   async multipleWithInclude({ resourceName, resourceData, options }) {
     const resource = Resources.get(resourceName);
-    
     const include = options.include.filter((rel) => !rel.includes('.'));
-    
     include.forEach((relationship) => {
       if (!resource.hasRelationship(relationship)) {
         throw new Error(`Trying to include unknown relationship of ${resourceName} - ${relationship}`);
@@ -73,7 +71,6 @@ class MPlaceGateway extends AbstractGateway {
 
         if (options.fields.includes(relationship) || !options.fields.some((field) => field.startsWith(`${relationship}.`))) {
           relationshipFields = Resources.get(relationshipResource).fields;
-          // console.log(relationshipFields);
         } else {
           relationshipFields = options.fields
             .filter((field) => field.startsWith(`${relationship}.`))
@@ -96,7 +93,6 @@ class MPlaceGateway extends AbstractGateway {
     relationshipsData = zip(include, relationshipsData);
     relationshipsData = relationshipsData.map(([relationship, data]) => [relationship, keyBy(data, 'id')]);
     relationshipsData = Object.fromEntries(relationshipsData);
-    // console.log(relationshipsData);
     return resourceData.map((item) => {
       const itemRelData = Object.fromEntries(
         include.map((rel) => {
