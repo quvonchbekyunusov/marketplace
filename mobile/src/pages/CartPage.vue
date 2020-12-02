@@ -1,6 +1,7 @@
 <template>
   <q-page>
-    {{ items[0].offerId }}
+    {{items[0] !== undefined ?
+      items[0].offerId : null }}
     <!-- start: Azimjon Toirov 09.10.2020 -->
     <div v-if="items.length > 0" class="flex column justify-center">
       <hr class="q-mt-md">
