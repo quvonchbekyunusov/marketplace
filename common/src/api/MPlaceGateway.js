@@ -88,7 +88,6 @@ class MPlaceGateway extends AbstractGateway {
         );
       }),
     );
-    
     relationshipsData = map(relationshipsData, 'data');
     relationshipsData = zip(include, relationshipsData);
     relationshipsData = relationshipsData.map(([relationship, data]) => [relationship, keyBy(data, 'id')]);
@@ -99,7 +98,6 @@ class MPlaceGateway extends AbstractGateway {
           const relData = Array.isArray(item[rel])
             ? item[rel].map((id) => relationshipsData[rel][id])
             : relationshipsData[rel][item[rel]];
-          
           return [rel, cloneDeep(relData)];
         }),
       );
