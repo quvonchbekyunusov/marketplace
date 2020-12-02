@@ -23,7 +23,7 @@ class PopularApi {
     });
 
     const brandSalesCountPairs = zip(brands, brandsSalesCount);
-    const filteredSalesCountPairs = brandSalesCountPairs.filter(([, salesCount]) => salesCount > 0);
+    const filteredSalesCountPairs = brandSalesCountPairs.filter((sales) => sales.length > 0);
     const orderedSalesCountPairs = orderBy(filteredSalesCountPairs, ['1'], ['desc']);
 
     return map(take(orderedSalesCountPairs, count), '0');
@@ -42,7 +42,7 @@ class PopularApi {
     });
 
     const categoriesSalesCountPairs = zip(categories, categoriesSalesCount);
-    const filteredSalesCountPairs = categoriesSalesCountPairs.filter(([, salesCount]) => salesCount > 0);
+    const filteredSalesCountPairs = categoriesSalesCountPairs.filter((sales) => sales.length > 0);
     const orderedSalesCountPairs = orderBy(filteredSalesCountPairs, ['1'], ['desc']);
 
     return map(take(orderedSalesCountPairs, count), '0');
