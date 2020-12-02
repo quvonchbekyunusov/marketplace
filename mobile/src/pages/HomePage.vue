@@ -24,7 +24,6 @@
         <h4 class="product-group-label q-mb-sm text-weight-bold">
           Скидки
         </h4>
-        <!-- <json-printer :value="discountedCatalogs" /> -->
         <ul class="row q-col-gutter-x-sm q-col-gutter-y-lg">
           <li
             v-for="catalog in discountedCatalogs"
@@ -136,7 +135,7 @@ export default {
 
     async discountedCatalogs() {
       const { data: catalogs } = await api.all('catalog', {
-        filter: { oldPrice: 'ne:null' },
+        filter: { oldPrice: 'ne:null', price: 'ne:null' },
         include: ['element', 'element.product'],
       });
 
@@ -146,6 +145,7 @@ export default {
     async popularCatalogs() {
       const catalogs = await PopularApi.catalogs({
         options: {
+          filter: { oldPrice: 'ne:null', price: 'ne:null' },
           include: ['element', 'element.product'],
         },
       });

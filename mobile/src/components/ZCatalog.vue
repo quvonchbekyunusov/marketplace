@@ -69,7 +69,7 @@ import VueTypes from 'vue-types';
 export default {
   name: 'ZCatalog',
   props: {
-    grandCategories: VueTypes.arrayOf(VueTypes.category).isRequired,
+    grandCategories: VueTypes.arrayOf(VueTypes.object).isRequired,
     fetchCategory: VueTypes.func.isRequired,
   },
   constants: {

@@ -2,7 +2,7 @@
   <ul
     class="flex items-center justify-around md:container mx-auto py-3"
   >
-    <li v-for="item in items" :key="item">
+    <li v-for="(item,index) in items" :key="index">
       <router-link class="text-gray-700" :to="item.link">
         {{ item.label }}
       </router-link>

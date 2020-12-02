@@ -89,9 +89,9 @@ export default {
       }
       return 'px-4 py-3';
     },
-    // contentMargin() {
-    //   return 'mx-2';
-    // },
+    contentMargin() {
+      return 'mx-2';
+    },
     iconPos() {
       return this.iconPosition === 'right' ? 'flex-row-reverse' : '';
     },
