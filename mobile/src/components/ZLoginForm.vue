@@ -57,7 +57,10 @@ export default {
       this.isPasswordVisible = !this.isPasswordVisible;
     },
     onSubmit() {
-      this.$emit('submit', { phone: this.email, password: this.password });
+      this.$emit('submit', {
+        phone: this.phone.replace(/[(|)|-\s]/g, ''),
+        password: this.password,
+      });
     },
   },
 };
