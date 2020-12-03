@@ -110,7 +110,7 @@
 import { mapGetters } from 'vuex';
 import ZCheckoutItemsCard from '@/components/ZCheckoutItemsCard';
 import api from '@common/api';
-import axios from 'axios';
+import OrderApi from '@common/services/OrderApi';
 
 export default {
   name: 'ProductsPreviewPage',
@@ -174,7 +174,6 @@ export default {
     this.locationData = this.locations
       .filter((location) => location.addressName !== this.checkoutItems.address.addressName);
     this.isLoading = false;
-    console.log(this.locationData);
   },
   methods: {
     async getOfferPrice(id, count) {
@@ -189,24 +188,13 @@ export default {
       return 0;
     },
     async createOrder() {
-      axios({
-        method: 'POST',
-        url: 'http://market.zetsoft.uz/api/shop/orders/save-order-vue.aspx',
-        data: {
-          userData: this.checkoutItems,
-          items: this.cardItems,
-        },
-      })
-        .then((response) => {
-          console.log(response);
-        });
-      // await api.create('order', { ...this.locationData, items: this.cardItems });
-      // await fetch('http://market.zetsoft.uz/api/shop/orders/save-order-vue.aspx', {
-      //   userData: this.locationData,
-      //   items: this.cardItems,
-      // });
-      // await this.$router.push({ name: 'order-completed' });
-      // await this.$store.dispatch('cart/clear');
+      this.isLoading = true;
+
+      await OrderApi.create('shop-order', this.checkoutItems, this.cardItems);
+      await this.$router.push({ name: 'order-completed' });
+      await this.$store.dispatch('cart/clear');
+
+      this.isLoading = false;
     },
   },
 };
