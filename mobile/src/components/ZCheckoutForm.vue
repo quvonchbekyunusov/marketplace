@@ -7,9 +7,37 @@
     <q-input
       v-model="name"
       color="primary"
-      class="rounded-borders q-mx-md"
+      class="rounded-borders q-mx-md q-mb-md"
       outlined
       label="Названия"
+    />
+    <q-select
+      v-model="country"
+      outlined
+      class="rounded-borders q-mx-md q-mb-md"
+      :options="options"
+      label="Страна"
+    />
+    <q-select
+      v-model="region"
+      outlined
+      class="rounded-borders q-mx-md q-mb-md"
+      :options="options"
+      label="Регионы"
+    />
+    <q-input
+      v-model="home"
+      color="primary"
+      class="rounded-borders q-mx-md q-mb-md"
+      outlined
+      label="Дом, Этаж, № квартиры"
+    />
+    <q-input
+      v-model="street"
+      color="primary"
+      class="rounded-borders q-mx-md"
+      outlined
+      label="Улица/Переулок"
     />
     <!-- end: Azimjon Toirov -->
     <div class="q-mt-md full-width">
@@ -44,6 +72,12 @@ export default {
   data() {
     return {
       name: '',
+      country: '',
+      selectedCountr: '',
+      region: '',
+      selectedRegion: '',
+      home: '',
+      street: '',
       shipmentAddress: null,
     };
   },
