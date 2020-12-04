@@ -255,15 +255,15 @@ class MPlaceGateway extends AbstractGateway {
   }
 
   async login({ phone, password }) {
-    await this.logout();
-    console.log(phone, password);
-    const { data: token } = await this.#http.get(`${MPlaceGateway.#API_HOST}/api/auth/login.aspx`, {
-      params: {
-        login: phone,
-        password,
-      },
-    });
-
+    let token;
+    fetch(`${MPlaceGateway.#API_HOST}/api/auth/login.aspx?login=${phone}&password=${password}`).then((resp) => resp.json())
+      .then((data) => {
+        if (data) {
+          localStorage.setItem('token', data);
+          token = localStorage.getItem('token');
+        }
+        console.log(token);
+      });
     if (token) {
       this.#auth.token = token;
     }
@@ -271,6 +271,7 @@ class MPlaceGateway extends AbstractGateway {
 
   async logout() {
     this.#auth.deleteToken();
+    console.log('LOG OUT');
   }
 }
 

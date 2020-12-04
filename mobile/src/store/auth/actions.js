@@ -12,6 +12,7 @@ export async function register({ commit }, userData) {
 
 export async function login({ commit }, credentials) {
   try {
+    console.log('LOGIN ACTION');
     await api.login(credentials);
     commit('setIsAuthorized', true);
   } catch {

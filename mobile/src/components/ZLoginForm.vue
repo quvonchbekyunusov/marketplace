@@ -10,7 +10,6 @@
       class="q-mb-md"
       color="primary"
       label="Phone"
-      mask="(##) ### - ## - ##"
       fill-mask
     />
 
