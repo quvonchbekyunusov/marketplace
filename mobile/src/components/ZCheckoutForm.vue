@@ -12,19 +12,22 @@
       label="Названия"
     />
     <q-select
-      v-model="country"
+      v-model="selectedCountry"
       outlined
       class="rounded-borders q-mx-md q-mb-md"
       :options="options"
       label="Страна"
+      @input="onSelectCountry"
     />
+    {{ selectedCountry }}
     <q-select
-      v-model="region"
+      v-model="selectedRegion"
       outlined
       class="rounded-borders q-mx-md q-mb-md"
-      :options="options"
+      :options="regions"
       label="Регионы"
     />
+    {{ selectedRegion }}
     <q-input
       v-model="home"
       color="primary"
@@ -62,6 +65,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 import ZLocationPicker from '@/components/ZLocationPicker';
 
 export default {
@@ -71,15 +75,30 @@ export default {
   },
   data() {
     return {
+      API_BASE_URL: 'http://market.zetsoft.uz/rest',
       name: '',
       country: '',
-      selectedCountr: '',
-      region: '',
+      selectedCountry: '',
+      regions: '',
       selectedRegion: '',
       home: '',
       street: '',
+      options: [],
       shipmentAddress: null,
     };
+  },
+  async created() {
+    const { data: { data: countries } } = await axios({
+      url: 'http://market.zetsoft.uz/rest/place-country/index.aspx',
+      method: 'GET',
+      params: {
+        select: ['id', 'name'],
+      },
+    });
+    this.options = countries.map((country) => ({
+      label: country.name,
+      value: country.id,
+    }));
   },
   methods: {
     onSubmit() {
@@ -90,6 +109,16 @@ export default {
     },
     onNewLocation(newLocation) {
       this.shipmentAddress = newLocation;
+    },
+    async onSelectCountry(country) {
+      const { data: { data: regions } } = await axios({
+        url: `${this.API_BASE_URL}/place-region/index.aspx?query[place_country_id]=${country.value}`,
+        method: 'GET',
+        params: {
+          select: ['id', 'name', 'place_country_id'],
+        },
+      });
+      this.regions = regions.map((region) => region.name);
     },
   },
 };
@@ -102,6 +131,5 @@ export default {
     border-radius: 6px;
     border-color: $grey-6;
   }
-
   // end: Azimjon Toirov
 </style>

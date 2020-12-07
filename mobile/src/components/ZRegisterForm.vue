@@ -19,7 +19,7 @@
       class="q-mb-md"
       color="primary"
       label="Phone"
-      mask="#########"
+      mask="(##) ### - ## - ##"
       fill-mask
     />
     <q-input
@@ -82,7 +82,7 @@ export default {
     onSubmit() {
       this.$emit('submit', {
         title: this.name,
-        email: this.email,
+        email: this.email.replace(/[(|)|-\s]/g, ''),
         password: this.password,
         role: 'client',
       });

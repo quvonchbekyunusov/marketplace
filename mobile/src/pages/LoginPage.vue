@@ -5,7 +5,6 @@
 </template>
 
 <script>
-import api from '@common/api';
 import VueTypes from 'vue-types';
 import ZLoginForm from '@/components/ZLoginForm';
 
@@ -19,10 +18,10 @@ export default {
   },
   methods: {
     async onLogin(credentials) {
-      await api.login(credentials);
+      // await api.login(credentials);
       try {
-        // await this.$store.dispatch('auth/login', credentials);
-        await api.login(credentials);
+        await this.$store.dispatch('auth/login', credentials);
+        // await api.login(credentials);
         await this.$router.replace(this.redirectTo);
       } catch (e) {
         this.$q.notify({ message: 'Email или пароль введен неверно', type: 'negative', position: 'top' });
