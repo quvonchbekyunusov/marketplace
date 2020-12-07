@@ -140,6 +140,7 @@ import ZCheckoutForm from '@/components/ZCheckoutForm';
 import ZEmptyState from '@/components/ZEmptyState';
 import ZBottomSheet from '@/components/ZBottomSheet';
 import ZHistoryLocations from '@/components/ZHistoryLocations';
+// import Moto from 'images/motorbike.png'
 
 export default {
   name: 'CheckoutPage',

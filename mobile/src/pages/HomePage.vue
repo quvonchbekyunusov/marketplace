@@ -149,7 +149,6 @@ export default {
           include: ['element', 'element.product'],
         },
       });
-      console.log(catalogs);
       return catalogs.filter((catalog) => catalog.element);
     },
 
