@@ -21,7 +21,6 @@ import ZFooter from '../components/ZFooter';
 // import ZToggleBtn from '@/components/ZToggleBtn';
 import ZHomeNav from '../components/ZHomeNav';
 // import ZProductCard from '../components/ZProductCard';
-
 export default {
   name: 'HomePage',
   components: {
@@ -67,10 +66,10 @@ export default {
       const date = e[2].value;
       console.log(date);
     },
-
   },
 };
 </script>
+
 <style scoped>
   .carousel-wrapper {
     height: 423px;
