@@ -46,7 +46,7 @@ const routes = [
   },
   // start|AxrorbekNisonboyev|2020-10-21
   {
-    path: '/product/:id',
+    path: '/product', /* '/product/:id', */
     name: 'product',
     component: ProductPage,
     props: (route) => ({ productId: route.params.id }),
