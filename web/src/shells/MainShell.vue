@@ -7,7 +7,6 @@
 </template>
 
 <script>
-/* start|AzimjonToirov|10/20/2020 */
 import UiLayout from '@/components/ui/layouts/UiLayout';
 
 export default {

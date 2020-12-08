@@ -1,18 +1,8 @@
 <template>
   <div>
-    <ZAllMagazine :allMagazine="allMagazine"></ZAllMagazine>
-    <ZSeasonalProduct :seasonalProduct="seasonalProduct"></ZSeasonalProduct>
-    <div style="width: 768px"><ZFixedBarProductPage :dataList="dataList"></ZFixedBarProductPage></div>
-    <z-product-detail></z-product-detail>
-    <ZComments :review="review"></ZComments>
     <ZBlock :blockArr='blockArr' class="inline-block p-2"></ZBlock>
     <ZBlock :blockArr='blockArr' class="inline-block p-2"></ZBlock>
     <ZBreadCrumbs :links="arr" />
-    <div>
-      <ZUserRating
-        :ratingArr = 'arrRating'
-      />
-    </div>
     <div class="flex justify-center bg-primary-400">
       <div class="text-white px-4 py-2 m-2">
         <label>Наведите камеру <br> на Qr-код, чтобы скачать</label>
@@ -141,13 +131,7 @@ import ZFooterGooglPlay from '@/components/ZFooter_google_play';
 import ZFooterAppStore from '@/components/ZFooterAppStore';
 import ZPhoneQr from '@/components/ZPhoneQr';
 import ZBreadCrumbs from '@/components/ZBreadCrumbs';
-import ZUserRating from '@/components/ZUserRating';
 import ZBlock from '@/components/ZBlock';
-import ZComments from '@/components/ZComments';
-import ZProductDetail from '@/components/ZProductDetail';
-import ZFixedBarProductPage from '@/components/ZFixedBarProductPage';
-import ZSeasonalProduct from '@/components/ZSeasonalProduct';
-import ZAllMagazine from '@/components/ZAllMagazine';
 
 export default {
   components: {
@@ -155,13 +139,7 @@ export default {
     ZFooterAppStore,
     ZPhoneQr,
     ZBreadCrumbs,
-    ZUserRating,
     ZBlock,
-    ZComments,
-    ZProductDetail,
-    ZFixedBarProductPage,
-    ZSeasonalProduct,
-    ZAllMagazine,
   },
   data() {
     return {
