@@ -1,35 +1,19 @@
 <template>
   <fragment>
-    <div class="w-full shadow">
-      <z-navbar />
-    </div>
-    <z-home-nav />
     <div class="carousel-wrapper flex items-center justify-around md:container mx-auto py-3">
       <z-carousel class="w-9/12 h-full" :slides="SliderImages" />
       <img class="border border-black w-2/12 h-full" src="http://picsum.photos/340">
     </div>
-    <!--    <z-toggle-btn v-model="switch1" @toggle="log" />-->
-    <z-footer class="mt-10" />
   </fragment>
 </template>
 
 <script>
-import ZNavbar from '../components/ZNavbar';
 import ZCarousel from '../components/ZCarousel';
-import ZFooter from '../components/ZFooter';
-// import ZTab from '@/components/ZTab';
-// import ZToggleBtn from '@/components/ZToggleBtn';
-import ZHomeNav from '../components/ZHomeNav';
-// import ZProductCard from '../components/ZProductCard';
+
 export default {
   name: 'HomePage',
   components: {
-    // ZProductCard,
     ZCarousel,
-    ZFooter,
-    // ZToggleBtn,
-    ZNavbar,
-    ZHomeNav,
   },
   data() {
     return {
