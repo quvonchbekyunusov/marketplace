@@ -1,19 +1,17 @@
 <template>
   <div>
+<<<<<<< HEAD
     <!-- <z-all-magazine-block :allMagazine="allMagazine"/> -->
     <ZAllMagazine :allMagazine="allMagazine"></ZAllMagazine>
     <ZSeasonalProduct :seasonalProduct="seasonalProduct"></ZSeasonalProduct>
     <div style="width: 768px"><ZFixedBarProductPage :dataList="dataList"></ZFixedBarProductPage></div>
     <z-product-detail></z-product-detail>
     <ZComments :review="review"></ZComments>
+=======
+>>>>>>> 4eddb096876d20da858116be8c85fb9bfaddf5b0
     <ZBlock :blockArr='blockArr' class="inline-block p-2"></ZBlock>
     <ZBlock :blockArr='blockArr' class="inline-block p-2"></ZBlock>
     <ZBreadCrumbs :links="arr" />
-    <div>
-      <ZUserRating
-        :ratingArr = 'arrRating'
-      />
-    </div>
     <div class="flex justify-center bg-primary-400">
       <div class="text-white px-4 py-2 m-2">
         <label>Наведите камеру <br> на Qr-код, чтобы скачать</label>
@@ -142,8 +140,8 @@ import ZFooterGooglPlay from '@/components/ZFooter_google_play';
 import ZFooterAppStore from '@/components/ZFooterAppStore';
 import ZPhoneQr from '@/components/ZPhoneQr';
 import ZBreadCrumbs from '@/components/ZBreadCrumbs';
-import ZUserRating from '@/components/ZUserRating';
 import ZBlock from '@/components/ZBlock';
+<<<<<<< HEAD
 import ZComments from '@/components/ZComments';
 import ZProductDetail from '@/components/ZProductDetail';
 import ZFixedBarProductPage from '@/components/ZFixedBarProductPage';
@@ -151,6 +149,8 @@ import ZSeasonalProduct from '@/components/ZSeasonalProduct';
 import ZAllMagazine from '@/components/ZAllMagazine';
 // import ZAllMagazineBlock from '@/components/ZAllMagazineBlock';
 // import ZAllMagazineBlock from './ZAllMagazineBlock.vue';
+=======
+>>>>>>> 4eddb096876d20da858116be8c85fb9bfaddf5b0
 
 export default {
   components: {
@@ -158,14 +158,16 @@ export default {
     ZFooterAppStore,
     ZPhoneQr,
     ZBreadCrumbs,
-    ZUserRating,
     ZBlock,
+<<<<<<< HEAD
     ZComments,
     ZProductDetail,
     ZFixedBarProductPage,
     ZSeasonalProduct,
     ZAllMagazine,
     // ZAllMagazineBlock,
+=======
+>>>>>>> 4eddb096876d20da858116be8c85fb9bfaddf5b0
   },
   data() {
     return {

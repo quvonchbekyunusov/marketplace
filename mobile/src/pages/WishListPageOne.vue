@@ -1,7 +1,6 @@
 <template>
   <q-page class="column">
     <!-- start|AzimjonToirov|2020-10-27 Refactored -->
-
     <div v-if="productIds.length > 0">
       <div class="row favorites" />
       <ul class="row q-pa-sm">
@@ -65,7 +64,6 @@ export default {
       isLoading: false,
       elementIds: null,
       catalogs: null,
-      products: [],
       dialog: false,
     };
   },
@@ -85,19 +83,18 @@ export default {
           id: this.productIds,
         },
       });
-
       return Promise.all(
         products.map(async (product) => {
           const cheapestCatalog = await PriceApi.cheapestCatalog({ product: product.id });
 
           if (!cheapestCatalog) {
-            return null;
+            return false;
           }
 
           const priciestCatalog = await PriceApi.priciestCatalog({ product: product.id });
 
           if (!priciestCatalog) {
-            return null;
+            return false;
           }
 
           return {
@@ -178,10 +175,10 @@ export default {
 </script>
 
 <style scoped>
-  .favorites {
-    font-size: 18px;
-    line-height: 21px;
-    color: #27AE60;
-    border: 1px solid #D1CDCD;
-  }
+.favorites {
+  font-size: 18px;
+  line-height: 21px;
+  color: #27AE60;
+  border: 1px solid #D1CDCD;
+}
 </style>

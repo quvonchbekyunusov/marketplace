@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Transformers } from '../api/resources';
 
-const API_HOST = process.env.DEV ? 'http://10.10.3.171' : 'http://market.zetsoft.uz:7070';
+const API_HOST = 'http://market.zetsoft.uz';
 
 class IdentityApi {
   // eslint-disable-next-line class-methods-use-this

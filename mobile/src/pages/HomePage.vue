@@ -24,7 +24,6 @@
         <h4 class="product-group-label q-mb-sm text-weight-bold">
           Скидки
         </h4>
-
         <ul class="row q-col-gutter-x-sm q-col-gutter-y-lg">
           <li
             v-for="catalog in discountedCatalogs"
@@ -32,6 +31,7 @@
             class="col-6 column"
           >
             <z-catalog-card
+              v-if="catalog.element"
               class="col-grow"
               :catalog="catalog"
               :price="{ value: catalog.price, old: catalog.oldPrice }"
@@ -135,24 +135,21 @@ export default {
 
     async discountedCatalogs() {
       const { data: catalogs } = await api.all('catalog', {
-        filter: { oldPrice: 'ne:null' },
+        filter: { oldPrice: 'ne:null', price: 'ne:null' },
         include: ['element', 'element.product'],
-        page: {
-          size: 4,
-          number: 1,
-        },
       });
 
-      return catalogs;
+      return catalogs.filter((catalog) => catalog.element);
     },
 
     async popularCatalogs() {
-      return PopularApi.catalogs({
-        count: 4,
+      const catalogs = await PopularApi.catalogs({
         options: {
+          filter: { oldPrice: 'ne:null', price: 'ne:null' },
           include: ['element', 'element.product'],
         },
       });
+      return catalogs.filter((catalog) => catalog.element);
     },
 
     async popularBrands() {

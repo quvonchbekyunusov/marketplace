@@ -54,7 +54,7 @@ const resources = {
     },
 
     transformer: {
-      parent: 'parent_id',
+      parent: 'shop_category_id',
 
       image: {
         rawField: 'image',
@@ -241,7 +241,7 @@ const resources = {
     transformer: {
       product: 'shop_product_id',
       options: {
-        rawField: 'shop_option_ids',
+        rawField: 'option_simple',
         fromRaw(optionIds) {
           if (!optionIds) {
             return [];

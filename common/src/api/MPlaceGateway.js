@@ -8,7 +8,7 @@ import Http from '../http';
 import Auth from '../auth';
 
 class MPlaceGateway extends AbstractGateway {
-  static #API_HOST = process.env.DEV ? 'http://10.10.3.171' : 'http://market.zetsoft.uz:7070';
+  static #API_HOST = 'http://market.zetsoft.uz';
 
   #http = new Http({
     baseURL: `${MPlaceGateway.#API_HOST}/rest`,
@@ -53,9 +53,7 @@ class MPlaceGateway extends AbstractGateway {
 
   async multipleWithInclude({ resourceName, resourceData, options }) {
     const resource = Resources.get(resourceName);
-
     const include = options.include.filter((rel) => !rel.includes('.'));
-
     include.forEach((relationship) => {
       if (!resource.hasRelationship(relationship)) {
         throw new Error(`Trying to include unknown relationship of ${resourceName} - ${relationship}`);
@@ -90,23 +88,19 @@ class MPlaceGateway extends AbstractGateway {
         );
       }),
     );
-
     relationshipsData = map(relationshipsData, 'data');
     relationshipsData = zip(include, relationshipsData);
     relationshipsData = relationshipsData.map(([relationship, data]) => [relationship, keyBy(data, 'id')]);
     relationshipsData = Object.fromEntries(relationshipsData);
-
     return resourceData.map((item) => {
       const itemRelData = Object.fromEntries(
         include.map((rel) => {
           const relData = Array.isArray(item[rel])
             ? item[rel].map((id) => relationshipsData[rel][id])
             : relationshipsData[rel][item[rel]];
-
           return [rel, cloneDeep(relData)];
         }),
       );
-
       return {
         ...item,
         ...itemRelData,
@@ -128,7 +122,6 @@ class MPlaceGateway extends AbstractGateway {
     const relationshipsData = await Promise.all(
       include.map((relationship) => {
         const { type: relationshipType, resource: relationshipResource } = resource.getRelationship(relationship);
-
         let relationshipFields;
         const relationshipInclude = options.include
           .filter((inclusion) => inclusion.startsWith(`${relationship}.`))
@@ -262,15 +255,15 @@ class MPlaceGateway extends AbstractGateway {
   }
 
   async login({ phone, password }) {
-    await this.logout();
-    console.log(phone, password);
-    const { data: token } = await this.#http.get(`${MPlaceGateway.#API_HOST}/api/auth/login.aspx`, {
-      params: {
-        login: phone,
-        password,
-      },
-    });
-
+    let token;
+    fetch(`${MPlaceGateway.#API_HOST}/api/auth/login.aspx?login=${phone}&password=${password}`).then((resp) => resp.json())
+      .then((data) => {
+        if (data) {
+          localStorage.setItem('token', data);
+          token = localStorage.getItem('token');
+        }
+        console.log(token);
+      });
     if (token) {
       this.#auth.token = token;
     }
@@ -278,6 +271,7 @@ class MPlaceGateway extends AbstractGateway {
 
   async logout() {
     this.#auth.deleteToken();
+    console.log('LOG OUT');
   }
 }
 
