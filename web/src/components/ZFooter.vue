@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- <z-all-magazine-block :allMagazine="allMagazine"/> -->
     <ZAllMagazine :allMagazine="allMagazine"></ZAllMagazine>
     <ZSeasonalProduct :seasonalProduct="seasonalProduct"></ZSeasonalProduct>
     <div style="width: 768px"><ZFixedBarProductPage :dataList="dataList"></ZFixedBarProductPage></div>
@@ -148,6 +149,8 @@ import ZProductDetail from '@/components/ZProductDetail';
 import ZFixedBarProductPage from '@/components/ZFixedBarProductPage';
 import ZSeasonalProduct from '@/components/ZSeasonalProduct';
 import ZAllMagazine from '@/components/ZAllMagazine';
+// import ZAllMagazineBlock from '@/components/ZAllMagazineBlock';
+// import ZAllMagazineBlock from './ZAllMagazineBlock.vue';
 
 export default {
   components: {
@@ -162,6 +165,7 @@ export default {
     ZFixedBarProductPage,
     ZSeasonalProduct,
     ZAllMagazine,
+    // ZAllMagazineBlock,
   },
   data() {
     return {

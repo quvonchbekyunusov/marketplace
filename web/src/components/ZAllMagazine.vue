@@ -11,7 +11,7 @@
         </button>
       </div>
       <div class="inline-block pl-4 flex justify-center" style="width: 1100px">
-        <z-all-magazine-block
+        <!-- <z-all-magazine-block
           v-if="(index>=firstIndex) && (index<=secondIndex)"
           class="flex justify-center"
           :allMagazine="allMagazine"
@@ -20,7 +20,16 @@
           :secondIndex="secondIndex"
           :back="back"
           :dir="dir"
-        ></z-all-magazine-block>
+        ></z-all-magazine-block> -->
+        <z-all-magazine-block
+        class="flex justify-center"
+        :allMagazine="allMagazine"
+        :next="next"
+        :firstIndex="firstIndex"
+        :secondIndex="secondIndex"
+        :back="back"
+        :dir="dir"
+        />
       </div>
       <div class="inline-block" style="margin-top: 140px">
         <button @click="nextSlide(), dir='slide-right'" class="focus:outline-none" :class="cursorNext">
@@ -64,18 +73,18 @@ export default {
     },
   },
   props: {
-    allMagazine: VueTypes.arrayOf,
-    // allMagazine: VueTypes.arrayOf(
-    //   VueTypes.shape({
-    //     id: VueTypes.number,
-    //     logo: VueTypes.string.isRequired,
-    //     name: VueTypes.string.isRequired,
-    //     title: VueTypes.string.isRequired,
-    //     src1: VueTypes.string.isRequired,
-    //     src2: VueTypes.string.isRequired,
-    //     src3: VueTypes.string.isRequired,
-    //   }),
-    // ).isRequired,
+    // allMagazine: VueTypes.arrayOf,
+    allMagazine: VueTypes.arrayOf(
+      VueTypes.shape({
+        id: VueTypes.number,
+        logo: VueTypes.string.isRequired,
+        name: VueTypes.string.isRequired,
+        title: VueTypes.string.isRequired,
+        src1: VueTypes.string.isRequired,
+        src2: VueTypes.string.isRequired,
+        src3: VueTypes.string.isRequired,
+      }),
+    ).isRequired,
   },
   data() {
     return {

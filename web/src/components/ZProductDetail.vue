@@ -99,12 +99,10 @@ export default {
     return {
       slides: [
         { id: 1, src: 'https://otdelkasten.com/wp-content/uploads/2018/06/6daa35d95cbb9d7bbe2a7b4bacd952fc.jpg' },
-        { id: 2, src: 'https://xoxo.ru/wp-content/uploads/2018/01/untitled.png' },
+        { id: 2, src: 'https://pbs.twimg.com/media/DwyYy8hWwAARyII.jpg' },
         { id: 3, src: 'https://www.zastavki.com/pictures/1366x768/2008/Photoshop_Empty_plane_008144_.jpg' },
         { id: 4, src: 'https://im0-tub-com.yandex.net/i?id=90e935cf5e20066860f541dd88ebd21f&n=13' },
         { id: 5, src: 'https://dzerginsk.by/uploads/f9/0d/f90d5d3d2449bd5418ce50401656e4c4.jpg' },
-        { id: 6, src: 'https://im0-tub-com.yandex.net/i?id=1f75fb849cbc082786750f1b8433e333&n=13' },
-        { id: 7, src: 'https://img2.akspic.ru/image/13202-rastenie-flora-lepestok-sad_roz-blog-1920x1080.jpg' },
       ],
     };
   },
