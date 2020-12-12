@@ -8,7 +8,8 @@
         bg-primary-500
         text-white
         border rounded-tl-md rounded-tr-md
-        p-3
+        px-3
+        py-2
       "
     >
       <div class="">

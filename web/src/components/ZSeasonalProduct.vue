@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <fragment>
     <div
       v-for="sp in seasonalProduct"
          :key="sp.id"
          style="width: 730px; height: 210px"
-         class=" relative shadow rounded">
+         class="my-6 relative shadow rounded">
       <div class="inline-block">
         <div>
           <img :src="sp.src" style="width: 280px; height: 210px" class="rounded">
@@ -44,7 +44,7 @@
         </div>
       </div>
      </div>
-  </div>
+  </fragment>
 </template>
 
 <script>

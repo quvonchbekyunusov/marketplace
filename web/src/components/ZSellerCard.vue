@@ -16,11 +16,11 @@
       </div>
       <div class="flex w-full h-auto mt-4">
         <div class="w-3/4 flex justify-start">
-          <z-img src="/images/Rectangle%20452%20(1).png" :ratio="4 / 3" />
+          <img src="images/Rectangle 452 (1).png" />
         </div>
         <div class="w-1/4 flex flex-col justify-between">
-          <z-img src="/images/Rectangle%20454%20(1).png" :ratio="4 / 3 " />
-          <z-img src="/images/Rectangle%20453%20(1).png" :ratio="4 / 3" />
+          <img src="images/Rectangle%20454%20(1).png" />
+          <img src="images/Rectangle%20453%20(1).png" />
         </div>
       </div>
     </template>

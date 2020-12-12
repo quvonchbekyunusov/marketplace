@@ -1,8 +1,8 @@
 <template>
-  <ui-card>
+  <ui-card class="shadow-md">
     <template v-slot:section>
       <div>
-        <ui-img
+        <img
           src="/images/laptop%201.png"
         />
       </div>
@@ -15,9 +15,8 @@
             Envelope, Stripes, Pencil and etc. Purchase this kit today and feel OKAY
           </p>
         </div>
-        <div>
+        <div class="mt-4">
           <z-button
-            class="ml-10"
             title="Download"
             size="small"
             icon="fa-shopping-cart"
@@ -33,14 +32,14 @@
 
 <script>
 import UiCard from '@/components/ui/UiCard';
-import UiImg from '@/components/ui/UiImg';
+// import UiImg from '@/components/ui/UiImg';
 import ZButton from '@/components/ZButton';
 
 export default {
   name: 'ZProductCard',
   components: {
     UiCard,
-    UiImg,
+    // UiImg,
     ZButton,
   },
 };

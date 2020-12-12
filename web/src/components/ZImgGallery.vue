@@ -1,29 +1,43 @@
 <template>
   <!--start: SherzodMangliyev -->
-  <div class="flex">
-    <div class="w-1/6 flex flex-col">
-      <button
-        v-for="img in images"
-        :key="img"
-        class="focus:outline-none"
-        @click="imgchoise(img)"
-      >
-        <ui-img
-          :src="img"
-          :ratio="16 / 9"
-          class="my-1"
-        />
-      </button>
+  <div>
+    <div v-if="gallery" class="flex">
+      <div class="w-1/6 flex flex-col">
+        <button
+          v-for="img in images"
+          :key="img"
+          class="focus:outline-none"
+          @click="imgchoise(img)"
+        >
+          <ui-img
+            :src="img"
+            :ratio="16 / 9"
+            class="my-1"
+          />
+        </button>
+      </div>
+      <div class="w-5/6 flex items-center relative">
+        <button
+          class="w-full h-full absolute z-50 focus:outline-none"
+          @click="showMainImage"
+        >
+          <ui-img
+            class="cursor-zoom-in"
+            :src="mainImage"
+            :ratio="4 / 3"
+            :contain="true"
+          />
+        </button>
+      </div>
     </div>
-    <div class="w-5/6 flex items-center relative">
-      <button class="w-full h-full absolute z-50 focus:outline-none" @click="clicked" />
-      <ui-img
-        class="cursor-zoom-in"
+    <fragment v-else>
+      <img
         :src="mainImage"
-        :ratio="4 / 3"
-        :contain="true"
-      />
-    </div>
+        alt="Main Image of Gallery"
+        class="cursor-zoon-out"
+        @click="showMainImage"
+      >
+    </fragment>
   </div>
   <!--end: SherzodMangliyev 10 lines HTML 29.10.2020-->
 </template>
@@ -44,17 +58,16 @@ export default {
   data() {
     return {
       mainImage: this.images[0],
-      gallery: false,
+      gallery: true,
     };
   },
   methods: {
     imgchoise(img) {
       this.mainImage = img;
     },
-    clicked() {
-      console.log(this.gallery);
-      this.gallery = true;
-      console.log(this.gallery);
+    showMainImage() {
+      console.log('show main image');
+      this.gallery = !this.gallery;
     },
   },
 };
@@ -64,5 +77,8 @@ export default {
 <style scoped>
   .cursor-zoom-in {
     cursor: zoom-in;
+  }
+  .cursor-zoom-out {
+    cursor: zoom-out;
   }
 </style>
