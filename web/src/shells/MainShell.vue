@@ -12,7 +12,6 @@
 </template>
 
 <script>
-/* start|AzimjonToirov|10/20/2020 */
 import UiLayout from '@/components/ui/layouts/UiLayout';
 import ZNavbar from '@/components/ZNavbar';
 import ZFooter from '@/components/ZFooter';

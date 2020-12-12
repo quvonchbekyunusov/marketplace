@@ -1,5 +1,20 @@
 <template>
   <div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <!-- <z-all-magazine-block :allMagazine="allMagazine"/> -->
+    <ZAllMagazine :allMagazine="allMagazine"></ZAllMagazine>
+    <ZSeasonalProduct :seasonalProduct="seasonalProduct"></ZSeasonalProduct>
+    <div style="width: 768px"><ZFixedBarProductPage :dataList="dataList"></ZFixedBarProductPage></div>
+    <z-product-detail></z-product-detail>
+    <ZComments :review="review"></ZComments>
+=======
+>>>>>>> 4eddb096876d20da858116be8c85fb9bfaddf5b0
+    <ZBlock :blockArr='blockArr' class="inline-block p-2"></ZBlock>
+    <ZBlock :blockArr='blockArr' class="inline-block p-2"></ZBlock>
+    <ZBreadCrumbs :links="arr" />
+>>>>>>> 4f45d189cfab981b66a761dc2dd3866fb6ada440
     <div class="flex justify-center bg-primary-400">
       <div class="text-white px-4 py-2 m-2">
         <label>Наведите камеру <br> на Qr-код, чтобы скачать</label>
@@ -126,13 +141,160 @@
 <script>
 import ZFooterGooglPlay from '@/components/ZFooter_google_play';
 import ZFooterAppStore from '@/components/ZFooterAppStore';
+<<<<<<< HEAD
 // import ZPhoneQr from '@/components/ZPhoneQr';
+=======
+import ZPhoneQr from '@/components/ZPhoneQr';
+import ZBreadCrumbs from '@/components/ZBreadCrumbs';
+import ZBlock from '@/components/ZBlock';
+<<<<<<< HEAD
+import ZComments from '@/components/ZComments';
+import ZProductDetail from '@/components/ZProductDetail';
+import ZFixedBarProductPage from '@/components/ZFixedBarProductPage';
+import ZSeasonalProduct from '@/components/ZSeasonalProduct';
+import ZAllMagazine from '@/components/ZAllMagazine';
+// import ZAllMagazineBlock from '@/components/ZAllMagazineBlock';
+// import ZAllMagazineBlock from './ZAllMagazineBlock.vue';
+=======
+>>>>>>> 4eddb096876d20da858116be8c85fb9bfaddf5b0
+>>>>>>> 4f45d189cfab981b66a761dc2dd3866fb6ada440
 
 export default {
   components: {
     ZFooterGooglPlay,
     ZFooterAppStore,
+<<<<<<< HEAD
     // ZPhoneQr,
+=======
+    ZPhoneQr,
+    ZBreadCrumbs,
+    ZBlock,
+<<<<<<< HEAD
+    ZComments,
+    ZProductDetail,
+    ZFixedBarProductPage,
+    ZSeasonalProduct,
+    ZAllMagazine,
+    // ZAllMagazineBlock,
+=======
+>>>>>>> 4eddb096876d20da858116be8c85fb9bfaddf5b0
+  },
+  data() {
+    return {
+      arrRating: [
+        { fiveStar: 200, fourStar: 100, threeStar: 60, twoStar: 12, oneStar: 4 },
+      ],
+      review: [
+        {
+          user: {
+            avatar: 'http://www.hotavatars.com/wp-content/uploads/2019/01/I80W1Q0.png',
+            name: 'Долганова Светлана',
+          },
+          date: {
+            day: 9,
+            month: 'Oktober',
+            year: 1996,
+          },
+          rating: 3.7,
+          body: 'Затрудняюсь вынести адекватную оценку товару, так как стекло продержалось меньше недели.',
+        },
+      ],
+      dataList: [
+        {
+          id: 1,
+          src: 'https://gilmanlabs.com/wp-content/uploads/2017/02/OGMOGH0.jpg',
+          title: 'Смартфон Xiaomi RedmiNote 9 4/128GB, Чёрный...',
+          logo: 'https://logodownload.org/wp-content/uploads/2015/02/xiaomi-logo.png',
+          logoTitle: 'Xiaomi',
+        },
+      ],
+      seasonalProduct: [
+        {
+          id: 1,
+          src: 'https://gilmanlabs.com/wp-content/uploads/2017/02/OGMOGH0.jpg',
+          name: 'Dolphin',
+          title: 'Цветные карандаши',
+          rate: 4,
+          description: 'Яркие и масленные карандаши, 24шт. в коробке',
+          price: 250000,
+        },
+      ],
+      allMagazine: [
+        {
+          id: 1,
+          logo: 'https://im0-tub-com.yandex.net/i?id=8a2127c9fc9ce6adb000c7865545a0be&n=13',
+          name: 'Mplace1',
+          title: 'Защита экрана №1 в Мире',
+          src1: 'https://img.pngio.com/png-mobile-phone-transparent-mobile-phonepng-images-pluspng-cell-phone-pngs-hd-1024_1024.png',
+          src2: 'https://pixfeeds.com/images/technology/phones/1280-177435934-mobile-smartphone-with-applications.jpg',
+          src3: 'https://cdn.pixabay.com/photo/2012/04/18/20/54/iphone-37856_1280.png',
+        },
+        {
+          id: 2,
+          logo: 'https://xn--f1afgckh7i.xn--p1ai/wp-content/uploads/2017/09/Fiolent1.jpg',
+          name: 'Mplace2',
+          title: 'Защита экрана №1 в Мире',
+          src1: 'https://a.d-cd.net/8850449s-1920.jpg',
+          src2: 'https://pixfeeds.com/images/technology/phones/1280-177435934-mobile-smartphone-with-applications.jpg',
+          src3: 'https://i.pinimg.com/originals/cf/76/0c/cf760cf754726c29b3f933f5a6acee0b.jpg',
+        },
+        {
+          id: 3,
+          logo: 'https://im0-tub-com.yandex.net/i?id=8a2127c9fc9ce6adb000c7865545a0be&n=13',
+          name: 'Mplace3',
+          title: 'Защита экрана №1 в Мире',
+          src1: 'https://img.pngio.com/png-mobile-phone-transparent-mobile-phonepng-images-pluspng-cell-phone-pngs-hd-1024_1024.png',
+          src2: 'https://pixfeeds.com/images/technology/phones/1280-177435934-mobile-smartphone-with-applications.jpg',
+          src3: 'https://cdn.pixabay.com/photo/2012/04/18/20/54/iphone-37856_1280.png',
+        },
+        {
+          id: 4,
+          logo: 'https://xn--f1afgckh7i.xn--p1ai/wp-content/uploads/2017/09/Fiolent1.jpg',
+          name: 'Mplace4',
+          title: 'Защита экрана №1 в Мире',
+          src1: 'https://a.d-cd.net/8850449s-1920.jpg',
+          src2: 'https://pixfeeds.com/images/technology/phones/1280-177435934-mobile-smartphone-with-applications.jpg',
+          src3: 'https://i.pinimg.com/originals/cf/76/0c/cf760cf754726c29b3f933f5a6acee0b.jpg',
+        },
+        {
+          id: 5,
+          logo: 'https://im0-tub-com.yandex.net/i?id=8a2127c9fc9ce6adb000c7865545a0be&n=13',
+          name: 'Mplace5',
+          title: 'Защита экрана №1 в Мире',
+          src1: 'https://img.pngio.com/png-mobile-phone-transparent-mobile-phonepng-images-pluspng-cell-phone-pngs-hd-1024_1024.png',
+          src2: 'https://pixfeeds.com/images/technology/phones/1280-177435934-mobile-smartphone-with-applications.jpg',
+          src3: 'https://cdn.pixabay.com/photo/2012/04/18/20/54/iphone-37856_1280.png',
+        },
+        {
+          id: 6,
+          logo: 'https://xn--f1afgckh7i.xn--p1ai/wp-content/uploads/2017/09/Fiolent1.jpg',
+          name: 'Mplace6',
+          title: 'Защита экрана №1 в Мире',
+          src1: 'https://a.d-cd.net/8850449s-1920.jpg',
+          src2: 'https://pixfeeds.com/images/technology/phones/1280-177435934-mobile-smartphone-with-applications.jpg',
+          src3: 'https://i.pinimg.com/originals/cf/76/0c/cf760cf754726c29b3f933f5a6acee0b.jpg',
+        },
+        {
+          id: 7,
+          logo: 'https://im0-tub-com.yandex.net/i?id=8a2127c9fc9ce6adb000c7865545a0be&n=13',
+          name: 'Mplace7',
+          title: 'Защита экрана №1 в Мире',
+          src1: 'https://img.pngio.com/png-mobile-phone-transparent-mobile-phonepng-images-pluspng-cell-phone-pngs-hd-1024_1024.png',
+          src2: 'https://pixfeeds.com/images/technology/phones/1280-177435934-mobile-smartphone-with-applications.jpg',
+          src3: 'https://cdn.pixabay.com/photo/2012/04/18/20/54/iphone-37856_1280.png',
+        },
+        {
+          id: 8,
+          logo: 'https://xn--f1afgckh7i.xn--p1ai/wp-content/uploads/2017/09/Fiolent1.jpg',
+          name: 'Mplace8',
+          title: 'Защита экрана №1 в Мире',
+          src1: 'https://a.d-cd.net/8850449s-1920.jpg',
+          src2: 'https://pixfeeds.com/images/technology/phones/1280-177435934-mobile-smartphone-with-applications.jpg',
+          src3: 'https://i.pinimg.com/originals/cf/76/0c/cf760cf754726c29b3f933f5a6acee0b.jpg',
+        },
+      ],
+    };
+>>>>>>> 4f45d189cfab981b66a761dc2dd3866fb6ada440
   },
   // data() {
   //   return {

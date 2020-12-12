@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <ui-page>
     <ui-container>
       <div class="carousel-wrapper flex items-center justify-around md:container mx-auto py-3">
@@ -200,6 +201,18 @@ import UiCarouselCard from '@/components/ui/UiCarouselCard';
 import ZBestOffersCard from '@/components/ZBestOffersCard';
 import ZSeasonalProduct from '@/components/ZSeasonalProduct';
 import ZBrandCard from '@/components/ZBrandCard';
+=======
+  <fragment>
+    <div class="carousel-wrapper flex items-center justify-around md:container mx-auto py-3">
+      <z-carousel class="w-9/12 h-full" :slides="SliderImages" />
+      <img class="border border-black w-2/12 h-full" src="http://picsum.photos/340">
+    </div>
+  </fragment>
+</template>
+
+<script>
+import ZCarousel from '../components/ZCarousel';
+>>>>>>> 4f45d189cfab981b66a761dc2dd3866fb6ada440
 
 export default {
   name: 'HomePage',
@@ -207,6 +220,7 @@ export default {
     UiPage,
     UiContainer,
     ZCarousel,
+<<<<<<< HEAD
     ZPriceCard,
     ZSellerCard,
     ZProductCard,
@@ -214,6 +228,8 @@ export default {
     ZBestOffersCard,
     ZSeasonalProduct,
     ZBrandCard,
+=======
+>>>>>>> 4f45d189cfab981b66a761dc2dd3866fb6ada440
   },
   data() {
     return {
@@ -453,6 +469,7 @@ export default {
   },
 };
 </script>
+
 <style scoped>
   section p {
     font-size: 1.5rem;
