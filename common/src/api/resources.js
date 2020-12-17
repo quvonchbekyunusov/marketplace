@@ -1,30 +1,30 @@
-import Resource from "./core/Resource";
-import ResourceTransformer from "./core/ResourceTransformer";
-import ResourceMap from "./core/ResourceMap";
+import Resource from './core/Resource';
+import ResourceTransformer from './core/ResourceTransformer';
+import ResourceMap from './core/ResourceMap';
 
 const resources = {
   brand: {
-    rawName: "shop-brand",
+    rawName: 'shop-brand',
     schema: {
-      attrs: ["id", "name", "logo"],
+      attrs: ['id', 'name', 'logo'],
     },
 
     transformer: {
       logo: {
-        rawField: "image",
+        rawField: 'image',
 
         fromRaw(image, rawResource) {
           if (!image) {
-            return "/no-image.png";
+            return '/no-image.png';
           }
 
           const logo = image[0];
 
           if (!logo) {
-            return "/no-image.png";
+            return '/no-image.png';
           }
 
-          const isAbsolute = logo.startsWith("http://") || logo.startsWith("https://");
+          const isAbsolute = logo.startsWith('http://') || logo.startsWith('https://');
 
           return isAbsolute
             ? logo
@@ -32,7 +32,7 @@ const resources = {
         },
 
         toRaw(logo) {
-          const isAbsolute = logo.startsWith("http://") || logo.startsWith("https://");
+          const isAbsolute = logo.startsWith('http://') || logo.startsWith('https://');
 
           if (!isAbsolute) {
             throw new Error(`Brand logo url must be absolute - ${logo}`);
@@ -45,34 +45,34 @@ const resources = {
   },
 
   category: {
-    rawName: "shop-category",
+    rawName: 'shop-category',
 
     schema: {
-      attrs: ["id", "icon", "name", "image"],
+      attrs: ['id', 'icon', 'name', 'image'],
       relationships: {
-        brands: ["brand"],
-        parent: "category",
+        brands: ['brand'],
+        parent: 'category',
       },
     },
 
     transformer: {
-      parent: "shop_category_id",
+      parent: 'shop_category_id',
 
       image: {
-        rawField: "image",
+        rawField: 'image',
 
         fromRaw(image, rawResource) {
           if (!image) {
-            return "/no-image.png";
+            return '/no-image.png';
           }
 
           const logo = image[0];
 
           if (!logo) {
-            return "/no-image.png";
+            return '/no-image.png';
           }
 
-          const isAbsolute = logo.startsWith("http://") || logo.startsWith("https://");
+          const isAbsolute = logo.startsWith('http://') || logo.startsWith('https://');
 
           return isAbsolute
             ? logo
@@ -80,7 +80,7 @@ const resources = {
         },
 
         toRaw(logo) {
-          const isAbsolute = logo.startsWith("http://") || logo.startsWith("https://");
+          const isAbsolute = logo.startsWith('http://') || logo.startsWith('https://');
 
           if (!isAbsolute) {
             throw new Error(`Brand logo url must be absolute - ${logo}`);
@@ -91,7 +91,7 @@ const resources = {
       },
 
       brands: {
-        rawField: "shop_brand_ids",
+        rawField: 'shop_brand_ids',
 
         fromRaw(brandIds) {
           if (!brandIds) {
@@ -109,32 +109,32 @@ const resources = {
   },
 
   seller: {
-    rawName: "user-company",
+    rawName: 'user-company',
 
     baseValues: {
-      type: "market",
+      type: 'market',
     },
 
     schema: {
-      attrs: ["id", "logo", "name"],
+      attrs: ['id', 'logo', 'name'],
     },
 
     transformer: {
       logo: {
-        rawField: "photo",
+        rawField: 'photo',
 
         fromRaw(photo, rawResource) {
           if (!photo) {
-            return "/no-image.png";
+            return '/no-image.png';
           }
 
           const logo = photo[0];
 
           if (!logo) {
-            return "/no-image.png";
+            return '/no-image.png';
           }
 
-          const isAbsolute = logo.startsWith("http://") || logo.startsWith("https://");
+          const isAbsolute = logo.startsWith('http://') || logo.startsWith('https://');
 
           return isAbsolute
             ? logo
@@ -142,7 +142,7 @@ const resources = {
         },
 
         toRaw(logo) {
-          const isAbsolute = logo.startsWith("http://") || logo.startsWith("https://");
+          const isAbsolute = logo.startsWith('http://') || logo.startsWith('https://');
 
           if (!isAbsolute) {
             throw new Error(`Seller logo url must be absolute - ${logo}`);
@@ -155,35 +155,30 @@ const resources = {
   },
 
   product: {
-    rawName: "shop-product",
+    rawName: 'shop-product',
 
     schema: {
-      attrs: ["id", "name", "images", "description"],
+      attrs: ['id', 'name', 'images', 'description'],
       relationships: {
-        brand: "brand",
-        category: "category",
-        options: ["option"],
+        brand: 'brand',
+        category: 'category',
+        options: ['option'],
       },
     },
 
     transformer: {
       images: {
-        rawField: "image",
+        rawField: 'image',
         fromRaw(images, rawResource) {
           if (!images) {
-            return ["/no-image.png"];
+            return ['/no-image.png'];
           }
 
-          return images.map(
-            (image) =>
-              `http://market.zetsoft.uz/uploaz/market/ShopProduct/image/${rawResource.id}/${image}`
-          );
+          return images.map((image) => `http://market.zetsoft.uz/uploaz/market/ShopProduct/image/${rawResource.id}/${image}`);
         },
 
         toRaw(images) {
-          const isAbsolute = images.every(
-            (image) => image.startsWith("http://") || image.startsWith("https://")
-          );
+          const isAbsolute = images.every((image) => image.startsWith('http://') || image.startsWith('https://'));
 
           if (!isAbsolute) {
             throw new Error(`Product image urls must be absolute - ${images}`);
@@ -193,7 +188,7 @@ const resources = {
         },
       },
       category: {
-        rawField: "shop_category_id",
+        rawField: 'shop_category_id',
 
         fromRaw(id) {
           return Number(id);
@@ -203,9 +198,9 @@ const resources = {
           return id.toString();
         },
       },
-      brand: "shop_brand_id",
+      brand: 'shop_brand_id',
       options: {
-        rawField: "shop_option_ids",
+        rawField: 'shop_option_ids',
         fromRaw(optionIds) {
           if (!optionIds) {
             return [];
@@ -214,45 +209,45 @@ const resources = {
           return optionIds;
         },
       },
-      description: "text",
+      description: 'text',
     },
   },
   // start|Axrorbek|Nisonboyev|2020-10-09
 
   catalog: {
-    rawName: "shop-catalog",
+    rawName: 'shop-catalog',
 
     schema: {
-      attrs: ["id", "quantity", "name", "price", "oldPrice"],
+      attrs: ['id', 'quantity', 'name', 'price', 'oldPrice'],
       relationships: {
-        seller: "seller",
-        element: "element",
+        seller: 'seller',
+        element: 'element',
       },
     },
 
     transformer: {
-      oldPrice: "price_old",
-      seller: "user_company_id",
-      quantity: "amount",
-      description: "title",
-      element: "shop_element_id",
+      oldPrice: 'price_old',
+      seller: 'user_company_id',
+      quantity: 'amount',
+      description: 'title',
+      element: 'shop_element_id',
     },
   },
 
   element: {
-    rawName: "shop-element",
+    rawName: 'shop-element',
     schema: {
-      attrs: ["id", "name"],
+      attrs: ['id', 'name'],
       relationships: {
-        product: "product",
-        options: ["option"],
+        product: 'product',
+        options: ['option'],
       },
     },
 
     transformer: {
-      product: "shop_product_id",
+      product: 'shop_product_id',
       options: {
-        rawField: "option_simple",
+        rawField: 'option_simple',
         fromRaw(optionIds) {
           if (!optionIds) {
             return [];
@@ -265,47 +260,47 @@ const resources = {
   },
 
   option: {
-    rawName: "shop-option",
+    rawName: 'shop-option',
     schema: {
-      attrs: ["id", "name"],
+      attrs: ['id', 'name'],
       relationships: {
-        type: "option-type",
+        type: 'option-type',
       },
     },
     transformer: {
-      type: "shop_option_type_id",
+      type: 'shop_option_type_id',
     },
   },
 
-  "option-type": {
-    rawName: "shop-option-type",
+  'option-type': {
+    rawName: 'shop-option-type',
     schema: {
-      attrs: ["id", "name"],
+      attrs: ['id', 'name'],
     },
   },
 
   review: {
-    rawName: "shop-review",
+    rawName: 'shop-review',
     schema: {
-      attrs: ["id", "body", "rating"],
+      attrs: ['id', 'body', 'rating'],
       relationships: {
-        user: "user",
-        product: "product",
+        user: 'user',
+        product: 'product',
       },
     },
 
     transformer: {
-      product: "shop_product_id",
+      product: 'shop_product_id',
       rating: {
-        rawName: "rating",
+        rawName: 'rating',
         fromRaw: Number,
       },
-      user: "user_id",
-      body: "text",
+      user: 'user_id',
+      body: 'text',
     },
 
     baseValues: {
-      type: "product",
+      type: 'product',
     },
   },
 
@@ -313,102 +308,89 @@ const resources = {
 
   // start|AxrorbekNisonboyev|2020-10-12
   order: {
-    rawName: "shop-order",
+    rawName: 'shop-order',
     schema: {
-      attrs: ["id", "user", "date", "contactPhone", "contactName", "paymentType", "comment"],
+      attrs: ['id', 'user', 'date', 'contactPhone', 'contactName', 'paymentType', 'comment'],
       relationships: {
-        user: "user",
-        shipmentAddress: "place",
+        user: 'user',
+        shipmentAddress: 'place',
       },
     },
     transformer: {
-      user: "user_id",
-      contactName: "contact_name",
-      contactPhone: "contact_phone",
-      comment: "comment_user",
-      shipmentAddress: "place_adress_id",
-      paymentType: "payment_type",
+      user: 'user_id',
+      contactName: 'contact_name',
+      contactPhone: 'contact_phone',
+      comment: 'comment_user',
+      shipmentAddress: 'place_adress_id',
+      paymentType: 'payment_type',
     },
   },
 
-  "order-item": {
-    rawName: "shop-order-item",
+  'order-item': {
+    rawName: 'shop-order-item',
     schema: {
       attrs: [
-        "id",
-        "quantity",
-        "partialQuantity",
-        "returnedQuantity",
-        "price",
-        "totalPrice",
-        "partialPrice",
-        "returnedPrice",
+        'id',
+        'quantity',
+        'partialQuantity',
+        'returnedQuantity',
+        'price',
+        'totalPrice',
+        'partialPrice',
+        'returnedPrice',
       ],
       relationships: {
-        catalog: "catalog",
-        order: "order",
+        catalog: 'catalog',
+        order: 'order',
       },
     },
     transformer: {
-      order: "shop_order_id",
-      catalog: "shop_catalog_id",
-      quantity: "amount",
-      partialQuantity: "amount_partial",
-      returnedQuantity: "amount_return",
-      partialPrice: "price_all_partial",
-      returnedPrice: "price_all_return",
+      order: 'shop_order_id',
+      catalog: 'shop_catalog_id',
+      quantity: 'amount',
+      partialQuantity: 'amount_partial',
+      returnedQuantity: 'amount_return',
+      partialPrice: 'price_all_partial',
+      returnedPrice: 'price_all_return',
     },
   },
 
-  "place-address": {
-    rawName: "place-adress",
+  'place-address': {
+    rawName: 'place-adress',
     schema: {
-      attrs: ["id"],
+      attrs: ['id'],
     },
   },
 
   user: {
-    rawName: "user",
+    rawName: 'user',
     schema: {
-      attrs: ["id", "name", "avatar", "email", "phone", "role"],
+      attrs: ['id', 'name', 'avatar', 'email', 'phone', 'role'],
     },
     transformer: {
-      avatar: "photo",
-      name: "title",
+      avatar: 'photo',
+      name: 'title',
     },
     baseValue: {
-      role: "client",
+      role: 'client',
     },
   },
   // end|AxrorbekNisonboyev|2020-10-12
 };
 
-const Resources = new Map(
-  Object.entries(resources).map(([name, definition]) => [
-    name,
-    new Resource(name, definition.schema),
-  ])
-);
+const Resources = new Map(Object.entries(resources)
+  .map(([name, definition]) => [name, new Resource(name, definition.schema)]));
 
-const ResourcesMapper = new ResourceMap(
-  Object.fromEntries(
-    Object.entries(resources).map(([name, definition]) => [name, definition.rawName])
-  )
-);
+const ResourcesMapper = new ResourceMap(Object.fromEntries(Object.entries(resources)
+  .map(([name, definition]) => [name, definition.rawName])));
 
-const Transformers = new Map(
-  Object.entries(resources).map(([name, definition]) => [
-    name,
-    new ResourceTransformer(Resources.get(name), definition.transformer),
-  ])
-);
+const Transformers = new Map(Object.entries(resources)
+  .map(([name, definition]) => [name, new ResourceTransformer(Resources.get(name), definition.transformer)]));
 
-const BaseValues = new Map(
-  Object.entries(resources).map(([name, definition]) => [name, definition.baseValues || {}])
-);
+const BaseValues = new Map(Object.entries(resources)
+  .map(([name, definition]) => [name, definition.baseValues || {}]));
 
-const ResponseNormalizers = new Map(
-  Object.entries(resources).map(([name, definition]) => [name, definition.normalizer || {}])
-);
+const ResponseNormalizers = new Map(Object.entries(resources)
+  .map(([name, definition]) => [name, definition.normalizer || {}]));
 
 export { Resources, ResourcesMapper as ResourceMap, Transformers, BaseValues, ResponseNormalizers };

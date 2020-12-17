@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://market.zetsoft.uz/rest';
+const API_BASE_URL = 'http://market.zetsoft.uz:8080/rest';
 
 class OrderApi {
   // eslint-disable-next-line class-methods-use-this
@@ -23,7 +23,18 @@ class OrderApi {
       throw new Error('Order not created');
     }
 
-    for (const cardItem of cardItems) {
+    // for (const cardItem of cardItems) {
+    //   await axios({
+    //     method: 'POST',
+    //     url: `${API_BASE_URL}/shop-order-item/create.aspx`,
+    //     data: {
+    //       shop_order_id: order.id,
+    //       shop_catalog_id: cardItem.offerId,
+    //       amount: cardItem.quantity,
+    //     },
+    //   });
+    // }
+    cardItems.map(async (cardItem) => {
       await axios({
         method: 'POST',
         url: `${API_BASE_URL}/shop-order-item/create.aspx`,
@@ -33,7 +44,7 @@ class OrderApi {
           amount: cardItem.quantity,
         },
       });
-    }
+    });
   }
 }
 

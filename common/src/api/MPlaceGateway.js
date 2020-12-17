@@ -8,7 +8,7 @@ import Http from '../http';
 import Auth from '../auth';
 
 class MPlaceGateway extends AbstractGateway {
-  static #API_HOST = 'http://market.zetsoft.uz';
+  static #API_HOST = 'http://market.zetsoft.uz:8080';
 
   #http = new Http({
     baseURL: `${MPlaceGateway.#API_HOST}/rest`,

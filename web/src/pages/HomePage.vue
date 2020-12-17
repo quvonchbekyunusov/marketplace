@@ -200,7 +200,6 @@ import UiCarouselCard from '@/components/ui/UiCarouselCard';
 import ZBestOffersCard from '@/components/ZBestOffersCard';
 import ZSeasonalProduct from '@/components/ZSeasonalProduct';
 import ZBrandCard from '@/components/ZBrandCard';
-import ZCarousel from '../components/ZCarousel';
 
 export default {
   name: 'HomePage',

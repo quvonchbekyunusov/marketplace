@@ -75,7 +75,7 @@ export default {
   },
   data() {
     return {
-      API_BASE_URL: 'http://market.zetsoft.uz/rest',
+      API_BASE_URL: 'http://market.zetsoft.uz:8080/rest',
       name: '',
       country: '',
       selectedCountry: '',
@@ -89,7 +89,7 @@ export default {
   },
   async created() {
     const { data: { data: countries } } = await axios({
-      url: 'http://market.zetsoft.uz/rest/place-country/index.aspx',
+      url: `${this.API_BASE_URL}/place-country/index.aspx`,
       method: 'GET',
       params: {
         select: ['id', 'name'],
