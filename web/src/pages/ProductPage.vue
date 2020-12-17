@@ -1,11 +1,4 @@
 <template>
-<<<<<<< HEAD
-  <h1>this is product page</h1>
-</template>
-
-<script>
-
-=======
   <div class="md:container mx-auto">
     <div class="ml-3">
         <z-product-detail />
@@ -36,5 +29,4 @@ export default {
     productId: VueTypes.number.isRequired,
   },
 };
->>>>>>> 4f45d189cfab981b66a761dc2dd3866fb6ada440
 </script>
