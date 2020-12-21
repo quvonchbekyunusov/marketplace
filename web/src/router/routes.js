@@ -10,6 +10,7 @@ import IndexPage from "@/pages/IndexPage";
 import CheckOutPage from "@/pages/CheckOutPage";
 import LoginPage from "@/pages/LoginPage";
 import RegisterPage from "@/pages/RegisterPage.vue";
+import CategoryPage from "@/pages/CategoryPage.vue";
 
 const routes = [
   {
@@ -51,6 +52,11 @@ const routes = [
     path: "/login",
     name: "login",
     component: LoginPage,
+  },
+  {
+    path: "/category",
+    name: "category",
+    component: CategoryPage,
   },
   {
     path: "/register",

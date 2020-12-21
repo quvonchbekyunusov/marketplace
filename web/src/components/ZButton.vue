@@ -1,4 +1,5 @@
 <template>
+  <router-link :to="to">
   <button
     class="flex focus:outline-none shadow-md  font-normal rounded-md"
     :class="[
@@ -19,6 +20,7 @@
       {{ title }}
     </div>
   </button>
+  </router-link>
 </template>
 
 <script>
@@ -35,6 +37,7 @@ export default {
     textColor: VueTypes.string,
     borderColor: VueTypes.string,
     bgColor: VueTypes.string.def('white'),
+    to: VueTypes.object.isRequired,
   },
   data() {
     return {

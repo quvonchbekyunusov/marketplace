@@ -16,6 +16,7 @@
           icon="fas fa-align-left mr-2"
           class="py-2 text-white w-32 mr-8"
           bg-color="primary-500"
+          :to="{ name: 'category'}"
         />
       </div>
       <div class="w-2/4">
